@@ -1,7 +1,8 @@
 title: AICD-1 Supplementary
+description: Supplementary Resource for Nature Comment on Artificial Intelligence Medicine
 theme: just-the-docs
 
-# サイドバーの順番と表示名
+# ナビゲーション順
 nav:
   - Home: index.md
   - Full Classification: classification.md
