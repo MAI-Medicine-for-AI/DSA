@@ -1,0 +1,13 @@
+title: AICD-1 Supplementary
+theme: just-the-docs
+
+# サイドバーの順番と表示名
+nav:
+  - Home: index.md
+  - Full Classification: classification.md
+  - Case Studies: case-studies.md
+  - Diagnostic Algorithms: diagnostics.md
+  - Evaluation Metrics: evaluation.md
+  - Glossary: glossary.md
+  - Download Center: download.md
+  - References / Citing this Resource: references.md
