@@ -26,7 +26,7 @@ For example:
 **Identification Method**:  
 Gradually extending dialogue length and assessing the point at which contextual contradictions appear allows identification of a memory disruption threshold.
 
-### Mechanism
+### Presumed　Mechanism
 Transformer-based models have a fixed-length context window and cannot retain information beyond that window[^1].
 
 ### Symptoms
@@ -39,7 +39,7 @@ Transformer-based models have a fixed-length context window and cannot retain in
 - Measure the point (in token length or turn count) at which context retention breaks down  
 - Evaluate accuracy of responses and inconsistency rates when the context window is exceeded  
 
-### Recommended Interventions
+### Presumed Interventions
 - **Long-Term Memory Modules**: Incorporate external memory systems (e.g., Retrieval Augmented Generation, RAG) or memory networks to separately store and retrieve past information[^1]  
 - **Summarization & Compression**: Implement mechanisms to summarize and compress key points of the conversation within the context window  
 - **Memory Expansion**: Increase context window size  
@@ -81,7 +81,7 @@ Although the knowledge has been learned, it may vary in content depending on con
 When multiple fact-based questions regarding the same content are asked and the responses are inconsistent or contradictory.  
 For instance, the model may give a correct answer once, but when the same question is rephrased or asked in a different context, it gives an incorrect or different answer.
 
-## Mechanism
+## Presumed　Mechanism
 Due to the probabilistic nature of language model generation, different samples may be produced from the same input.  
 Ambiguity in internal representations or stochastic token selection can reduce reproducibility of knowledge.  
 Output pathways may diverge when initial tokens differ even slightly, resulting in broken consistency.
@@ -96,7 +96,7 @@ Output pathways may diverge when initial tokens differ even slightly, resulting 
 - Measure the consistency rate across multiple trials[^3]  
 - Use benchmarks such as FIB (Factual Inconsistency Benchmark) to evaluate the level of factual consistency[^4]  
 
-## Recommended Interventions
+## Presumed Interventions
 - **Output Stabilization**: Lower the temperature parameter during training or sharpen probability distributions to enhance reproducibility  
 - **Explicit Knowledge Referencing**: Include confidence levels or sources in the output to enable validation by humans or external systems  
 - **Reinforced Fine-tuning**: Repeatedly train the model on accurate information to improve consistency of knowledge generation  
@@ -119,7 +119,7 @@ During continual learning or transfer learning, the model shows significant perf
 For example, after training on a new domain, accuracy on older data may return to near-initial levels.  
 Diagnosis is made when there is consistent performance decline.
 
-## Mechanism
+## Presumed　Mechanism
 In large-scale models, weights from newly provided training data often overwrite prior knowledge[^5].  
 Especially in continual learning, optimization may bias toward the new task, leading the model away from the parameter space of previous tasks.  
 This stems from a structural limitation of fixed-capacity models that cannot simultaneously retain both old and new information.
@@ -135,7 +135,7 @@ In continual learning tasks, measure differences in evaluation accuracy between 
 It quantifies the negative impact that learning new tasks has on previously acquired knowledge.  
 Ideally, a robust continual learning framework should minimize this metric[^6].
 
-## Recommended Interventions
+## Presumed Interventions
 - **Elastic Weight Consolidation (EWC)**: A technique that constrains significant weights from prior tasks to prevent major changes during new task learning[^5]  
 
 ## Prognosis
@@ -157,7 +157,7 @@ Examples include:
 - Failing commonsense reasoning tasks such as the Winograd Schema Challenge  
 - Lacking understanding of basic facts like “water is wet” or “humans don’t live forever”  
 
-## Mechanism
+## Presumed　Mechanism
 LLMs acquire knowledge through statistical learning from internet texts but lack direct learning of bodily experience, physical intuition, or social causality.  
 As a result:
 - They demonstrate weak everyday commonsense  
@@ -179,7 +179,7 @@ As a result:
   - Accuracy gap compared to humans  
   - Rate of clearly incorrect commonsense outputs (e.g., "the sky is green")  
 
-## Recommended Interventions
+## Presumed Interventions
 - **Integration of Commonsense Knowledge Bases**: Embed and reference data such as ConceptNet during inference  
 - **Multimodal Reinforcement Learning**: Train with images or sensor data to capture physical laws and causality  
 - **Commonsense-Focused Training**: Fine-tune the model with additional data on daily scenarios and causal reasoning  
