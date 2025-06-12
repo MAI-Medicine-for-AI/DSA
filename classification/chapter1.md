@@ -1,7 +1,7 @@
 ---
-title: Chapter 1: Input & Perception Disorders
+title: "Chapter 1: Input & Perception Disorders"
 nav_order: 2
-parent: Full Classification
+parent: "Full Classification"
 ---
 # Chapter 1: Input & Perception Disorders
 
