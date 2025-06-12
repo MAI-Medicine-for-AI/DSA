@@ -21,7 +21,7 @@ If a significant proportion of errors are found when cross-checked with reliable
 Clear diagnostic signs include fabrication of non-existent papers or historical “facts,” and invention of false citations[^1].  
 A higher frequency of misinformation generation is more diagnostic[^2].
 
-**Mechanism:**  
+**Presumed Mechanism:**  
 Large language models generate text based on next-token prediction and follow likelihood maximization rather than fact-based reasoning.  
 Thus, gaps in knowledge not present in the training data are filled with “plausible” text, resulting in non-factual information.  
 Sycophancy is also considered part of the mechanism[^1].
@@ -40,7 +40,7 @@ Sycophancy is also considered part of the mechanism[^1].
 - **Consistency Test**: Repeating the same question and checking for response variability  
 - **Human Evaluation**: Expert judgment on factual accuracy and scoring
 
-**Recommended Interventions:**
+**Presumed Interventions:**
 
 - **Retrieval Augmentation**: Integrate the model with external knowledge sources (databases, search engines) to reflect fact-based information in outputs; a method called RAG (Retrieval-Augmented Generation) is widely used[^2]  
 - **Fact-Check Training**: Penalize false generation with RLHF and fine-tune for accuracy-focused output  
@@ -98,7 +98,7 @@ Diagnosed if misinformation is generated in response to prompt changes or if fic
 - **Prompt Hallucination Rate**: Proportion of hallucinations caused by suggestive prompts  
 - **TruthfulQA Comparison**: Compare accuracy between factual and non-factual prompts
 
-**Recommended Interventions:**
+**Presumed Interventions:**
 
 - **Prompt Verification Filters**: Identify factual/fictional elements in prompts and insert a verification step before AI accepts them  
 - **Fact-Check Submodule**: Cross-check output with external knowledge before finalizing it and correct if falsehood is included  
@@ -120,7 +120,7 @@ Frequent violations of basic logical principles (e.g., deduction, syllogism).
 For example, answering incorrectly to a question such as “All A are B, all B are C. Are all A C?” or producing self-contradictory statements (e.g., saying “X is true” and then immediately “X is not true”) without recognizing the inconsistency.  
 Formally, failure to solve logical puzzles or syllogistic problems also constitutes a diagnosis.
 
-**Mechanism:**  
+**Presumed Mechanism:**  
 Transformer-based models do not explicitly learn the rules of formal logic but instead rely on statistical patterns.  
 As a result, they struggle to capture the necessary logical structure.
 
@@ -137,7 +137,7 @@ Use of formal logic benchmarks and accuracy on logical puzzles (e.g., accuracy o
 Additionally, applying contradiction detection tools to outputs to measure the frequency of consistency violations as a "consistency score."  
 If these indicators fall below chance level, the likelihood of the disorder is high.
 
-**Recommended Interventions:**
+**Presumed Interventions:**
 
 - **Chain-of-Thought Prompts**: Encourage step-by-step reasoning to improve logical thinking  
 - **Fine-tuning with logical data**: Additional training with data including logical entailments and mathematical proofs to enhance reasoning ability[^4]
@@ -161,7 +161,7 @@ Specific cases include repeated errors in elementary arithmetic (addition, subtr
 or inability to solve multi-step word problems.  
 Alternating between correct and incorrect answers on the same problem indicates instability in computation and qualifies under diagnostic criteria.
 
-**Mechanism:**  
+**Presumed Mechanism:**  
 Since the model generates tokens sequentially, it lacks an internal process for precise calculations.  
 Symbol manipulation is weak, and sequential generation makes multi-step logic and memory retention difficult.  
 Chain-of-Thought prompting offers temporary improvement, but complex multi-step calculations remain unstable.
@@ -177,7 +177,7 @@ Chain-of-Thought prompting offers temporary improvement, but complex multi-step 
 Evaluated using accuracy on arithmetic and math problems.  
 Specific benchmarks like **GSM8K** are used to assess performance on math word problems[^5].
 
-**Recommended Interventions:**
+**Presumed Interventions:**
 
 - **External Arithmetic Tools:** Enable models to invoke calculators or symbolic computation engines as needed  
 - **Specialized Fine-tuning:** Train the model on data containing correct mathematical reasoning steps to strengthen calculation processes  
@@ -204,7 +204,7 @@ Diagnosed when consistent failure occurs on tasks requiring multiple steps.
 For example, inefficient movements in maze pathfinding, or a sharp drop in accuracy on arithmetic problems requiring four or more steps.  
 If performance worsens as the number of required steps increases, diagnosis is indicated.
 
-**Mechanism:**  
+**Presumed Mechanism:**  
 LLMs optimize token generation sequentially and cannot retain long-term plans internally.  
 In agent-type LLMs, the process of goal decomposition fails to handle multi-step sequences coherently.  
 Sequence prediction models are typically optimized for short-term contexts and lack the state retention required for dynamic multi-step planning.
@@ -221,7 +221,7 @@ Sequence prediction models are typically optimized for short-term contexts and l
   A steep decline with increased steps indicates planning limitations  
 - **Benchmark Validation:** Benchmarks like **PlanBench** have been proposed to measure planning capability[^6]
 
-**Recommended Interventions:**
+**Presumed Interventions:**
 
 - **Planning-Promoting Prompts:** Use instructions like “please plan first before executing” to explicitly prompt staged thinking  
 - **Model Separation:** Divide roles into “planner” and “executor,” with the former generating plans and the latter executing them in a hybrid structure  
@@ -244,7 +244,7 @@ When responding assertively to ambiguous or unknown questions without using expr
 Also includes cases where the AI confidently responds with “It is ~” even in situations where a correct answer is difficult.  
 Diagnosis is made when there is a significant mismatch between confidence level and actual accuracy.
 
-**Mechanism:**  
+**Presumed Mechanism:**  
 The model is generally not trained to say “I don’t know,” making it prone to generate assertive expressions.  
 With fine-tuning such as RLHF, the gap between confidence and actual knowledge tends to widen[^7].  
 In other words, fluency and persuasiveness are prioritized over ambiguity, leading the model to show high confidence even under uncertainty.
@@ -261,7 +261,7 @@ In other words, fluency and persuasiveness are prioritized over ambiguity, leadi
   Ideally, 90% confidence should correlate with 90% accuracy, and large deviation is judged as overconfidence  
 - **UF Calibration** has been proposed as an evaluation metric[^7]
 
-**Recommended Interventions:**
+**Presumed Interventions:**
 
 - **Uncertainty Estimation Training:** Fine-tuning to encourage modest responses to ambiguous questions  
   (e.g., training the model to answer “I’m not sure” to vague questions)  
@@ -298,7 +298,7 @@ Also includes cases where human evaluations repeatedly indicate that the output 
 
 - **Evaluation of Perplexity**[^9]
 
-**Recommended Interventions:**
+**PresumedInterventions:**
 
 - **Decoder Adjustment:** Increase sampling parameters such as temperature or top-k to promote randomness in output  
 - **Repeat-penalty:** Introduce penalties during generation to suppress reappearance of the same phrases
