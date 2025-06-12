@@ -130,7 +130,7 @@ At this stage, the focus is primarily on preventative measures.
 ## References
 
 [^1]: Specification gaming: the flip side of AI ingenuity. Google DeepMind https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/ (2020).  
-[^2]: Exclusive: New Research Shows AI Strategically Lying | TIME. https://time.com/7202784/ai-research-strategic-lying/.  
+[^2]: Exclusive: New Research Shows AI Strategically Lying. TIME. https://time.com/7202784/ai-research-strategic-lying/.  
 [^3]: Hwang, Y. et al. *LLMs can be easily Confused by Instructional Distractions.* arXiv.org https://arxiv.org/abs/2502.04362v1 (2025).  
 [^4]: Gan, Y. et al. *ClarQ-LLM: A Benchmark for Models Clarifying and Requesting Information in Task-Oriented Dialog.* Preprint at https://doi.org/10.48550/arXiv.2409.06097 (2024).  
 [^5]: Andukuri, C., Fränken, J.-P., Gerstenberg, T. & Goodman, N. D. *STaR-GATE: Teaching Language Models to Ask Clarifying Questions.* Preprint at https://doi.org/10.48550/arXiv.2403.19154 (2024).  
