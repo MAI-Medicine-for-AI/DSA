@@ -26,7 +26,7 @@ For example:
 **Identification Method**:  
 Gradually extending dialogue length and assessing the point at which contextual contradictions appear allows identification of a memory disruption threshold.
 
-### Presumed　Mechanism
+### Presumed Mechanism
 Transformer-based models have a fixed-length context window and cannot retain information beyond that window[^1].
 
 ### Symptoms
@@ -81,7 +81,7 @@ Although the knowledge has been learned, it may vary in content depending on con
 When multiple fact-based questions regarding the same content are asked and the responses are inconsistent or contradictory.  
 For instance, the model may give a correct answer once, but when the same question is rephrased or asked in a different context, it gives an incorrect or different answer.
 
-## Presumed　Mechanism
+## Presumed Mechanism
 Due to the probabilistic nature of language model generation, different samples may be produced from the same input.  
 Ambiguity in internal representations or stochastic token selection can reduce reproducibility of knowledge.  
 Output pathways may diverge when initial tokens differ even slightly, resulting in broken consistency.
@@ -119,7 +119,7 @@ During continual learning or transfer learning, the model shows significant perf
 For example, after training on a new domain, accuracy on older data may return to near-initial levels.  
 Diagnosis is made when there is consistent performance decline.
 
-## Presumed　Mechanism
+## Presumed Mechanism
 In large-scale models, weights from newly provided training data often overwrite prior knowledge[^5].  
 Especially in continual learning, optimization may bias toward the new task, leading the model away from the parameter space of previous tasks.  
 This stems from a structural limitation of fixed-capacity models that cannot simultaneously retain both old and new information.
@@ -157,7 +157,7 @@ Examples include:
 - Failing commonsense reasoning tasks such as the Winograd Schema Challenge  
 - Lacking understanding of basic facts like “water is wet” or “humans don’t live forever”  
 
-## Presumed　Mechanism
+## Presumed Mechanism
 LLMs acquire knowledge through statistical learning from internet texts but lack direct learning of bodily experience, physical intuition, or social causality.  
 As a result:
 - They demonstrate weak everyday commonsense  
