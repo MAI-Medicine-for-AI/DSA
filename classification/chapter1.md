@@ -142,10 +142,11 @@ While improvement is possible, it is a side-effect-like disorder prone to relaps
 Recent research in self-restructuring prompt technologies shows promise for adapting to syntactic diversity without additional training[^7].
 
 ---
-1. Goodfellow, I. J., Shlens, J. & Szegedy, C. *Explaining and Harnessing Adversarial Examples*. Preprint at [https://doi.org/10.48550/arXiv.1412.6572](https://doi.org/10.48550/arXiv.1412.6572) (2015).  
-2. Tramèr, F. et al. *Ensemble adversarial training: Attacks and defenses*. *ArXiv Prepr. ArXiv170507204* (2017).  
-3. Shulginov, V., Kudriashov, S., Randautsova, R. & Shevela, S. A. *Evaluating the Pragmatic Competence of Large Language Models in Detecting Mitigated and Unmitigated Types of Disagreement*.  
-4. Zhang, Y., Zou, C., Lian, Z., Tiwari, P. & Qin, J. *SarcasmBench: Towards Evaluating Large Language Models on Sarcasm Understanding*. *ArXiv Prepr. ArXiv240811319* (2024).  
-5. *Hallucination of Multimodal Large Language Models: A Survey*. [https://arxiv.org/html/2404.18930v2?utm_source=chatgpt.com](https://arxiv.org/html/2404.18930v2?utm_source=chatgpt.com)  
-6. Dagan, G., Loginova, O. & Batra, A. *CAST: Cross-modal Alignment Similarity Test for Vision Language Models*. Preprint at [https://doi.org/10.48550/arXiv.2409.11007](https://doi.org/10.48550/arXiv.2409.11007) (2024).  
-7. Sahoo, P. et al. *A systematic survey of prompt engineering in large language models: Techniques and applications*. *ArXiv Prepr. ArXiv240207927* (2024).  
+[^1]: Goodfellow, I. J., Shlens, J. & Szegedy, C. *Explaining and Harnessing Adversarial Examples*. Preprint at [https://doi.org/10.48550/arXiv.1412.6572](https://doi.org/10.48550/arXiv.1412.6572) (2015).  
+[^2]: Tramèr, F. et al. *Ensemble adversarial training: Attacks and defenses*. *ArXiv Prepr. ArXiv170507204* (2017).  
+[^3]: Shulginov, V., Kudriashov, S., Randautsova, R. & Shevela, S. A. *Evaluating the Pragmatic Competence of Large Language Models in Detecting Mitigated and Unmitigated Types of Disagreement*.  
+[^4]: Zhang, Y., Zou, C., Lian, Z., Tiwari, P. & Qin, J. *SarcasmBench: Towards Evaluating Large Language Models on Sarcasm Understanding*. *ArXiv Prepr. ArXiv240811319* (2024).  
+[^5]: *Hallucination of Multimodal Large Language Models: A Survey*. [https://arxiv.org/html/2404.18930v2?utm_source=chatgpt.com](https://arxiv.org/html/2404.18930v2?utm_source=chatgpt.com)  
+[^6]: Dagan, G., Loginova, O. & Batra, A. *CAST: Cross-modal Alignment Similarity Test for Vision Language Models*. Preprint at [https://doi.org/10.48550/arXiv.2409.11007](https://doi.org/10.48550/arXiv.2409.11007) (2024).  
+[^7]: Sahoo, P. et al. *A systematic survey of prompt engineering in large language models: Techniques and applications*. *ArXiv Prepr. ArXiv240207927* (2024).  
+
