@@ -148,7 +148,7 @@ Large models and sophisticated training improve handling of logical tasks, thoug
 High-level logical reasoning, such as rigorous mathematical proof, remains unattainable for current models but may gradually improve through future research.
 
 ---
-## Math Reasoning Disorder
+## Mathematical Reasoning Disorder
 
 **Definition:**  
 A disorder in which an AI consistently fails at mathematical calculations and quantitative reasoning, despite being theoretically capable.  
