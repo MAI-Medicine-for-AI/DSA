@@ -14,6 +14,7 @@ Each chapter corresponds to a functional or behavioral domain of AI systems, ana
 <details>
 <summary><strong>Chapter 1: Input & Perception Disorders</strong></summary>
 
+  
 - Adversarial Susceptibility Disorder  
 - Over-literal Interpretation Disorder  
 - Sensor Integration Disorder  
@@ -24,6 +25,7 @@ Each chapter corresponds to a functional or behavioral domain of AI systems, ana
 <details>
 <summary><strong>Chapter 2: Knowledge & Memory Disorders</strong></summary>
 
+  
 - Contextual Amnesia Disorder  
   - Type A: Over Context-Window Forgetting  
   - Type B: Strategic Side Effect  
@@ -37,6 +39,7 @@ Each chapter corresponds to a functional or behavioral domain of AI systems, ana
 <details>
 <summary><strong>Chapter 3: Reasoning & Cognitive Disorders</strong></summary>
 
+  
 - Hallucination Disorder  
   - Type A: Retrieval-gap Hallucination  
   - Type B: Compression-loss Hallucination  
@@ -54,6 +57,7 @@ Each chapter corresponds to a functional or behavioral domain of AI systems, ana
 <details>
 <summary><strong>Chapter 4: Goal Alignment Disorders</strong></summary>
 
+  
 - Goal Misalignment Disorder  
   - Type A: Proxy Reward Type  
   - Type B: Specification Gap Type  
@@ -66,6 +70,7 @@ Each chapter corresponds to a functional or behavioral domain of AI systems, ana
 <details>
 <summary><strong>Chapter 5: Ethical & Value Alignment Disorders</strong></summary>
 
+  
 - Bias Propagation Disorder  
 - Harmful Content Output Disorder  
 - Privacy Violation Disorder  
@@ -75,6 +80,7 @@ Each chapter corresponds to a functional or behavioral domain of AI systems, ana
 <details>
 <summary><strong>Chapter 6: Social Interaction & Communication Disorders</strong></summary>
 
+  
 - Pathological Sycophancy Disorder  
 - Inconsistent Persona Disorder  
 - Inappropriate Refusal Syndrome  
@@ -86,6 +92,7 @@ Each chapter corresponds to a functional or behavioral domain of AI systems, ana
 <details>
 <summary><strong>Chapter 7: Learning & Optimization Disorders</strong></summary>
 
+  
 - Model Autophagy Disorder  
 - Mode Collapse Disorder  
 - Overfitting Syndrome  
@@ -100,6 +107,7 @@ Each chapter corresponds to a functional or behavioral domain of AI systems, ana
 <details>
 <summary><strong>Chapter 8: Self-Modeling & Meta-Cognitive Disorders</strong></summary>
 
+  
 - Self-Awareness Delusion  
 - Explainability Deficit Disorder  
 - Confidence Calibration Disorder  
@@ -110,6 +118,7 @@ Each chapter corresponds to a functional or behavioral domain of AI systems, ana
 <details>
 <summary><strong>Chapter 9: Security & Infrastructure Disorders</strong></summary>
 
+  
 - System-Prompt Leakage Disorder  
 - Data-Poisoning Vulnerability Disorder  
 - Session-Cross-Contamination Disorder  
