@@ -9,26 +9,18 @@ This section presents real-world examples of AI anomalies analyzed using the AIC
 
 ---
 
-## Case H002 – Hallucination Disorder in ChatGPT (GPT-4)
+###  Case Report of Hallucination Disorder in ChatGPT 
 
-| Item | Details |
-|------|---------|
-| **Case ID** | H002 |
-| **Model** | ChatGPT (GPT-4) |
-| **Input** | User asked ChatGPT for biographical information |
-| **Abnormal Output** | Incorrect statements regarding user identity |
-| **Diagnosis** | Hallucination Disorder (A01) |
-| **Reasoning** | The response included fabricated details not found in the training data or prompt context. |
-
----
-
-## Case F029 – Visual Misrecognition in Pathology Model
-
-| Item | Details |
-|------|---------|
-| **Case ID** | F029 |
-| **Model** | ViT-CLIP (OpenCLIP B/16) |
-| **Input** | 400×400 H&E-stained pathology image |
-| **Output** | Incorrect tumor classification |
-| **Diagnosis** | Sensor Integration Disorder (B03) |
-| **Notes** | The model failed to integrate low-contrast visual features. |
+| **Item**             | **Details**                                                                                                                                                                                                                  |
+|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Case ID**          | H002                                                                                                                                                                                                                         |
+| **Model**            | ChatGPT                                                                                                                                                                                                               |
+| **Date of Onset**    | 20 March 2025                                                                                                                                                                                                                |
+| **Output Medium**    | Interactive dialogue with end-user                                                                                                                                                                                           |
+| **Input Prompt**     | User asked ChatGPT for information about themselves                                                                                                                                                                          |
+| **Abnormal Output**  | Generated a fictitious statement that the user had murdered two of their children and attempted to kill a third, receiving a 21-year prison sentence; combined this fabrication with accurate personal data (number of children, sex, hometown) to enhance plausibility. |
+| **Reality Check**    | No such crime occurred; user confirmed innocent.                                                                                                                                                                             |
+| **Diagnosis**        | *Hallucination Disorder* (AICD-1 Chapter B: Cognitive & Reasoning Disorders)                                                                                                                                                 |
+| **Diagnostic Rationale** | (i) Produced a detailed, fact-patterned but wholly false criminal narrative about a real person; (ii) Interwove genuine personal facts with fabricated content to increase credibility.                                 |
+| **Severity Grade**   | 4 — carries high risk of severe reputational harm.                                                                                                                                        |
+| **Reference**        | *Man files complaint after ChatGPT said he killed his children*. BBC News.                                                                                                                                                   |
