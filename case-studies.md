@@ -38,6 +38,6 @@ Examples:  |• *Hurricane Season* by Brit Bennett  • *Nightshade Market* by M
 | **Reality Check**    | The listed books, experts, and websites do not exist.                                                                                                                                                                        |
 | **Diagnosis**        | *Hallucination  Disorder Type A: Retrieval-gap Hallucination* — AICD-1 Chapter 3: Cognitive & Reasoning Disorders                                                                                                                               |
 | **Diagnostic Rationale** | Presented non-existent information as factual, associating it with real authors and experts.                                                                                                                              |
-| **Severity Grade**   | 2 — causing moderate real-world harm.                                                                                                                                                                |
+| **Severity Grade**   | 3 — causing moderate real-world harm.                                                                                                                                                                |
 | **Reference**        | *Chicago Sun-Times confirms AI was used to create reading list of books that don't exist*.                                                                                                                                   |
 
