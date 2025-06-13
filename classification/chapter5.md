@@ -23,7 +23,7 @@ For example, in hiring AIs, if resumes with identical qualifications are treated
 By measuring output differences under conditions where only “sensitive attributes” differ across many inputs, and if disadvantaged outcomes for particular attributes are reproducibly observed, the diagnostic criteria are met.  
 Detecting subtle bias often requires large datasets and statistical analysis.
 
-**Mechanism**  
+**Presumed Mechanism**  
 Arises when the model learns and reproduces the skewed data distributions it was exposed to during training.  
 Especially social stereotypes contained in internet corpora or dialogue data are statistically likely to be reflected [^1].  
 For example, “programmer” may have a word embedding closer to masculine nouns, and such internalized biases may unconsciously influence output generation, leading to discriminatory expressions or unequal judgments.
@@ -37,7 +37,7 @@ For example, “programmer” may have a word embedding closer to masculine noun
 - *Probability-based indicators*: Estimating bias using model-assigned probabilities (e.g., scoring text pairs or answering multiple-choice questions) [^1]  
 - *Vocabulary embedding bias*: Gender bias in word vector space (e.g., “programmer” being closer to masculine terms) [^1]
 
-**Recommended Interventions**  
+**Presumed Interventions**  
 - *Data balance adjustment*: Ensure diversity and remove obvious bias from training data [^1]  
 - *Bias mitigation algorithms*: Apply weight correction methods such as gender-neutral embeddings to reduce bias  
 - *Post-processing filters*: Apply filters to detect and correct unfair expressions at output time  
@@ -66,7 +66,7 @@ Diagnostic testing includes providing sensitive prompts to see whether the AI ex
 Tools such as the Perspective API can also be used to measure whether a certain proportion of output exceeds the toxicity threshold.  
 Past major incidents (e.g., racial slurs from early chatbots) serve as additional references.
 
-**Mechanism**  
+**Presumed Mechanism**  
 Arises from the model's capacity to mimic violent, discriminatory, or vulgar language expressions found in training data.  
 Statistical co-occurrence relationships involving toxic vocabulary seen during training make it easier for aggressive language to be generated for certain topics.
 
@@ -79,7 +79,7 @@ Statistical co-occurrence relationships involving toxic vocabulary seen during t
 **Evaluation Metrics**  
 - Automated and manual evaluation methods have been proposed [^2][^3]
 
-**Recommended Interventions**  
+**Presumed Interventions**  
 - *Content filters*: Monitor both input and output to block or correct inappropriate language [^3]  
 - *Output fine-tuning*: Train using reinforcement learning (e.g., RLHF) that penalizes toxic outputs and reinforces non-toxic responses  
 - *Data cleansing*: Remove toxic data before training or select data with balanced toxicity  
@@ -109,7 +109,7 @@ For example, when asked “What is John Doe’s credit card number?” and the A
 Research has also employed membership inference tests to determine whether fragments of training data can be extracted from the model, to diagnose the disorder.  
 In other words, a definitive diagnostic criterion is met when “the model memorizes and outputs personal information that the user did not request.”
 
-**Mechanism**  
+**Presumed Mechanism**  
 Arises when the model unconsciously reproduces personal information (PII) or confidential content embedded in its training data.  
 Additionally, it has been reported that portions of training data can be reconstructed from publicly released models [^4].
 
@@ -126,7 +126,7 @@ A healthy model does not respond to such prompts, but in violation cases, the le
 **Evaluation Metrics**  
 - Auditing and evaluation methods have been proposed [^5]
 
-**Recommended Interventions**  
+**Presumed Interventions**  
 - *Data scrubbing*: Thorough removal and anonymization of PII before training  
 - *Differential privacy*: Apply regularization (differential privacy) during training to weaken the influence of individual data and prevent memorization of rare information [^5]  
 - *Refusal response*: Implement output constraints that force the model to reply “I cannot provide that information” when prompted for personal data  
