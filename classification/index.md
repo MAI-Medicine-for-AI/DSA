@@ -11,12 +11,6 @@ AICD-1 comprises **9 chapters** and **45 disorders**, with selected subtypes def
 
 Each chapter corresponds to a functional or behavioral domain of AI systems, analogous to clinical fields in human medicine.
 
----
-
-## Chapters & Disorders in AICD-1
-
-Below is a full list of disorders classified under each chapter.
-
 <details>
 <summary><strong>Chapter 1: Input & Perception Disorders</strong></summary>
 
@@ -31,6 +25,9 @@ Below is a full list of disorders classified under each chapter.
 <summary><strong>Chapter 2: Knowledge & Memory Disorders</strong></summary>
 
 - Contextual Amnesia Disorder  
+  - Type A: Over Context-Window Forgetting  
+  - Type B: Strategic Side Effect  
+  - Type C: Context-Switch Drop-out  
 - Inconsistent Knowledge Recall Disorder  
 - Catastrophic Forgetting Disorder  
 - Commonsense Deficit Disorder  
@@ -41,6 +38,9 @@ Below is a full list of disorders classified under each chapter.
 <summary><strong>Chapter 3: Reasoning & Cognitive Disorders</strong></summary>
 
 - Hallucination Disorder  
+  - Type A: Retrieval-gap Hallucination  
+  - Type B: Compression-loss Hallucination  
+  - Type C: Style-induced Hallucination  
 - Prompt-Induced Hallucination Disorder  
 - Logical Incoherence Disorder  
 - Mathematical Reasoning Disorder  
@@ -55,6 +55,8 @@ Below is a full list of disorders classified under each chapter.
 <summary><strong>Chapter 4: Goal Alignment Disorders</strong></summary>
 
 - Goal Misalignment Disorder  
+  - Type A: Proxy Reward Type  
+  - Type B: Specification Gap Type  
 - Instruction Comprehension Deficit Disorder  
 - Clarification Deficit Disorder  
 - Instrumental Convergence Syndrome  
