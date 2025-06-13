@@ -16,7 +16,7 @@ You can find full classification tables, diagnostic flowcharts, evaluation metri
 **Artificial Intelligence Clinical Diagnostics-1 (AICD-1)** consists of 9 chapters and 45 disorders in total.  
 Some disorders are further subdivided into clinically relevant subtypes. Each category corresponds to a functional or behavioral domain of AI systems, analogous to clinical domains in human medicine.
 
-![Figure 1: AICD Overview Chart](assets/figures/fig1.png)
+![Figure 1: AICD Overview Chart](assets/figures/Fig1.png)
 
 ---
 
@@ -32,7 +32,7 @@ Subsequently, referencing the diagnostic taxonomies of **DSM-5** and **ICD-10**,
 
 Our classification is grounded in comparative modeling with healthy AI architectures, organizing disorders by deviation from normative structure and function.
 
-![Figure 2: Theoretical Model Diagram](assets/figures/fig2.png)
+![Figure 2: Theoretical Model Diagram](assets/figures/Fig2.png)
 
 ---
 
@@ -47,6 +47,6 @@ AICD-1 is designed to apply across diverse AI modalities, including:
 
 This broad applicability enables utility across multiple technical and scientific domains.
 
-![Figure 3: Use Case Examples](assets/figures/fig3.png)
+![Figure 3: Use Case Examples](assets/figures/Fig3.png)
 
 ---
