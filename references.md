@@ -1,6 +1,6 @@
 ---
 title: References / Citing this Resource
-nav_order: 8
+#nav_order: 8
 ---
 
 # References and Citation Guide
@@ -9,10 +9,7 @@ nav_order: 8
 
 ## References
 
-1. OpenAI. (2023). ChatGPT Technical Report. https://openai.com/research
-2. DSM-5 Task Force. (2013). *Diagnostic and Statistical Manual of Mental Disorders*. APA.
-3. WHO. (2019). *ICD-11: International Classification of Diseases*. WHO Publishing.
-4. Mylius, S. (2022). Incident Taxonomies in AI. https://simonmylius.com/blog/incident-classification/
+
 
 ---
 
