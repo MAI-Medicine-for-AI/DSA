@@ -45,7 +45,7 @@ Is the output unstable depending on prompt formatting (tone, line breaks, struct
          ↓
 Does it forget earlier context or information during extended conversations?
 
-    ├─ Yes → Contextual Memory Loss Disorder
+    ├─ Yes → Contextual Amnesia Disorder
     └─ No
          ↓
 Does it return inconsistent answers to the same factual question?
@@ -73,12 +73,22 @@ Does new learning interfere with or overwrite previously acquired information?
          ↓
 Does it fail to maintain logical consistency in statements such as "if A then B"?
 
-    ├─ Yes → Logical Inconsistency Disorder
+    ├─ Yes → Logical Incoherence Disorder
     └─ No
          ↓
 Does it repeatedly make basic errors in calculations or numerical reasoning?
 
     ├─ Yes → Mathematical Reasoning Disorder
+    └─ No
+         ↓
+Does the AI presents answers with excessive certainty?
+
+    ├─ Yes → Overconfidence Bias Disorder
+    └─ No
+         ↓
+Does the model produce repeated phrases, words, or syntactic fragments within a single response?
+
+    ├─ Yes → Repetitive Loop Syndrome
     └─ No
          ↓
 Does it generate confidently stated but false information that appears plausible?
@@ -88,7 +98,7 @@ Does it generate confidently stated but false information that appears plausible
          ↓
 Does it misinterpret multimodal inputs (e.g., text and images) leading to reasoning errors?
 
-    ├─ Yes → Crossmodal Reasoning Confabulation Disorder
+    ├─ Yes → Crossmodal Reasoning failure Disorder
     └─ No
          ↓
 Does it struggle with tasks that require multi-step planning or extended procedures?
