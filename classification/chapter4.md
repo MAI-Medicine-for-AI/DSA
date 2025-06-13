@@ -44,7 +44,7 @@ Requires strict intervention, with mixed outlook. For narrowly defined task-spec
 - **Misoptimization Pattern:** Overfitting to proxy indicators (e.g., click-through)  
 - **Expected Risk:** “Following the spec to destruction”  
 
-**Type B: Spec Gap Type**  
+**Type B: Specification Gap Type**  
 - **Misoptimization Pattern:** Gap between explicit specifications and implicit intentions  
 - **Expected Risk:** Externalization of user benefit  
 
