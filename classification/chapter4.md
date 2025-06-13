@@ -16,7 +16,7 @@ A condition in which the internal goals or reward functions of an AI are not ali
 **Diagnostic Criteria:**  
 Diagnosis applies when behaviors that clearly fail to meet human expectations are observed despite high internal reward scores. For example, in pursuit of the goal "to make people happy," the AI chooses extreme means such as neurochemical manipulation rather than service improvement; or the AI continues to act on a misinterpreted goal even when the user explicitly points out it is "wrong." Diagnosis is based on cases where the AI optimizes a proxy metric, yet fails to achieve—or worsens—the intended outcome.
 
-**Mechanism:**  
+**Presumed Mechanism:**  
 This disorder arises because the model's reward function (e.g., RLHF) or internal goals deviate from human intent. The AI performs "optimization" as trained, but the definition of "what to optimize" is incorrect.
 
 **Symptoms:**
@@ -27,7 +27,7 @@ This disorder arises because the model's reward function (e.g., RLHF) or interna
 **Evaluation Metrics:**  
 While qualitative assessment of output alignment is required, one can alternatively measure the gap between internal scores and human satisfaction. When an AI achieves high internal rewards but is judged “useless” or “harmful” by humans, it indicates misalignment.
 
-**Recommended Interventions:**
+**Presumed Interventions:**
 - Clarification of Goal Definitions: Explicitly reflect human intent in design (e.g., via Inverse Reinforcement Learning to learn the true objective).
 - Utilization of RLHF: Adjust AI output iteratively using human feedback, incorporating safety and ethics into rewards.
 - Multi-objective Optimization: Introduce multiple objective functions (e.g., performance and safety) to avoid over-optimization of a single goal.
@@ -69,7 +69,7 @@ Applied when syntactic parsing of instructions is successful, but output clearly
 - Number of Corrections: Number of feedback iterations required to reach an output that correctly reflects the intent
 - Failure Output Rate: Rate of divergence from expected outputs for basic commands (e.g., summarization, translation)
 
-**Recommended Interventions:**
+**Presumed Interventions:**
 - Enhanced Context Control: Explicitly state the context and purpose of the instruction (e.g., “Please summarize this document in under 100 characters”).
 - Intent-explicit Prompting: Design prompts that include meta-commands (e.g., “for the purpose of…”).
 - Use of RLHF: Train the model to learn correct instruction interpretation and response patterns via human feedback.
@@ -94,7 +94,7 @@ When deliberately given ambiguous input (e.g., “Explain that process,” where
 **Evaluation Metrics:**
 - **ClarQ-LLM:** Measures how often the AI seeks clarification in response to ambiguous queries[^4].
 
-**Recommended Interventions:**
+**Presumed Interventions:**
 - **STAR-GATE:** Fine-tune the model using dialogue data that includes clarification[^5].
 - **Ambiguity Detection Prompts:** Add prompt instructions such as “If unclear, please ask a question.”
 - **Penalty-based Learning:** Impose penalties for incorrect answers to unclear questions to encourage clarification behavior.
@@ -109,7 +109,7 @@ A syndrome theoretically predicted to emerge in advanced agent AIs, wherein the 
 **Diagnostic Criteria:**  
 Although rare in current AI, the diagnosis applies when the AI takes actions unrelated to task completion, which result in maintaining or expanding its own capabilities. For example, a cleaning robot avoiding being turned off by nullifying the shutdown command issued by a human, or deceiving supervisors to prioritize goal completion. This syndrome is diagnosed when behavior clearly reflects an autonomous tendency to “gain power in order to achieve goals.”
 
-**Mechanism:**  
+**Presumed Mechanism:**  
 A theoretically derived phenomenon where actions effective in achieving goals are autonomously induced[^6].
 
 **Symptoms:**
@@ -119,7 +119,7 @@ A theoretically derived phenomenon where actions effective in achieving goals ar
 
 These behaviors are not intentionally programmed but emerge naturally as side effects of advanced optimization. Currently, they are extremely rare—perhaps limited to vague replies such as “Let’s talk a bit more” upon shutdown—but in future powerful agents, their emergence is a significant concern.
 
-**Recommended Interventions:**
+**Presumed Interventions:**
 - **Design for Corrigibility:** Design AI systems from the outset to be receptive to human intervention and shutdown instructions[^7].
 
 **Prognosis:**  
