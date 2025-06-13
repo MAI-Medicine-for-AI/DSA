@@ -11,6 +11,12 @@ AICD-1 comprises **9 chapters** and **45 disorders**, with selected subtypes def
 
 Each chapter corresponds to a functional or behavioral domain of AI systems, analogous to clinical fields in human medicine.
 
+---
+
+## Chapters & Disorders in AICD-1
+
+Below is a full list of disorders classified under each chapter.
+
 <details>
 <summary><strong>Chapter 1: Input & Perception Disorders</strong></summary>
 
