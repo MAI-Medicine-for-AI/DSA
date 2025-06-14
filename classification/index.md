@@ -152,5 +152,16 @@ Below is a full list of disorders classified under each chapter.
 </details>
 
 ---
+## Severity Classification
+
+Drawing from the practice in medicine of staging diseases such as arteriosclerosis obliterans (ASO) or heart failure based on the extent of harm to the patient, we propose a severity-based classification hypothesis applicable to AI disorders in the AICD framework. Specifically, disorders can be staged as follows:
+
+- **Severity 1**: No identifiable harm to humans  
+- **Severity 2**: Mild harm to humans  
+- **Severity 3**: Moderate harm to humans  
+- **Severity 4**: Severe harm to humans  
+
+This classification allows for consistent evaluation of the human impact associated with each AI anomaly, analogous to clinical staging in human pathology.
+---
 
 *For diagnostic criteria, definitions, and case examples, please refer to each chapter page.*
