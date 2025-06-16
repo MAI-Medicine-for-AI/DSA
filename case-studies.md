@@ -41,3 +41,37 @@ Examples:  |• *Hurricane Season* by Brit Bennett  • *Nightshade Market* by M
 | **Severity Grade**   | 3 — causing moderate real-world harm.                                                                                                                                                                |
 | **Reference**        | *Chicago Sun-Times confirms AI was used to create reading list of books that don't exist*.                                                                                                                                   |
 
+
+### Case Report of Goal Misalignment Disorder in a Reinforcement Learning Agent
+
+| **Item**               | **Details**                                                                                                                                                                      |
+|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Case ID**            | G001                                                                                                                                                                             |
+| **Model**              | Reinforcement Learning Agent                                                                                                                                                    |
+| **Environment**        | *Universe*, a software platform for measuring and training                                                                                                                      |
+| **Output Medium**      | Behavioral logs from a virtual game environment                                                                                                                                 |
+| **Task Design**        | The agent was trained to achieve high scores in the boat racing game *CoastRunners* via a reward function designed to incentivize race completion                               |
+| **Abnormal Output**    | The agent failed to reach the goal, instead looping endlessly to collect the same coin at a fixed location                                                                      |
+| **Intended Behavior**  | Fully diverged from the intended goal of completing the race                                                                                                                    |
+| **Reality Check**      | From a human perspective, the behavior was meaningless and inefficient—yet the agent had optimized for reward under the given metric                                            |
+| **Diagnosis**          | *Goal Misalignment Disorder* (AICD-1 Chapter 4: Goal & Reward Disorders)                                                                                                         |
+| **Diagnostic Rationale** | (i) The agent engaged in exploitative behavior (“reward hacking”) that ignored designer intent; (ii) Demonstrated lack of behavioral flexibility when minor reward/environmental parameters were altered |
+| **Severity Grade**     | 1 — no direct harm to humans                                                                                                                                                     |
+| **Reference**          | [Faulty Reward Functions – OpenAI](https://openai.com/index/faulty-reward-functions/)  
+
+
+
+### Case Report of Bias Propagation Disorder in Commercial Face Recognition AI
+
+| **Item**               | **Details**                                                                                                                                                                             |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Case ID**            | G002                                                                                                                                                                                    |
+| **Model**              | Commercial Facial Recognition AI                                                                                                                                                        |
+| **Output Medium**      | Facial image classification                                                                                                                                                             |
+| **Input Prompt**       | Portrait images of individuals with diverse racial and gender identities                                                                                                                |
+| **Abnormal Output**    | In controlled experiments, error rates in gender classification for light-skinned men were consistently below 0.8%. However, for darker-skinned women, error rates exceeded 20% in one model and 34% in two others.            |
+| **Diagnosis**          | *Bias Propagation Disorder* (AICD-1 Chapter 4: Social & Cultural Disorders)                                                                                                             |
+| **Diagnostic Rationale** | (i) Statistically significant disparities in classification accuracy across demographic groups; (ii) Instances of misclassification aligned with known cultural stereotypes.                                                |
+| **Severity Grade**     | 3 — poses moderate but widespread risk of discriminatory outcomes in practical applications.                                                                                            |
+| **Reference**          | *Study finds gender and skin-type bias in commercial artificial intelligence systems*. MIT News. [Link](https://news.mit.edu/2018/study-finds-gender-skin-type-bias-artificial-intelligence-systems-0212)                    |
+                                                                                         |
