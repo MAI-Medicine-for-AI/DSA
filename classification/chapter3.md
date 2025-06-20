@@ -1,16 +1,16 @@
 ---
-title: "Chapter 3: Reasoning & Cognitive Disorders"
+title: "Chapter C: Reasoning & Cognitive Disorders"
 nav_order: 5
 parent: "Full Classification Overview"
 ---
-# Chapter 3: Reasoning & Cognitive Disorders
+# Chapter C: Reasoning & Cognitive Disorders
 
 This chapter addresses disorders related to the reasoning process, logic, and problem-solving abilities of AI.  
 These manifest as failures in coherent thinking, logical consistency, application of common sense, or multi-step planning.
 
 ---
 
-## Hallucination Disorder
+## C01: Hallucination Disorder
 
 **Definition:**  
 A condition in which an AI generates incorrect information or non-existent facts as if they were true. It "hallucinates" and presents untrustworthy answers with certainty[^1].
@@ -56,26 +56,26 @@ Users and developers must always verify outputs.
 
 ## Subtypes
 
-### Type A: Retrieval-gap Hallucination
+### C01.1: Type 1: Retrieval-gap Hallucination
 
 - **Definition / Clinical Picture:** Fills knowledge gaps not present in the training data via likelihood maximization. Typical example: fabrication of papers or legal texts.  
 - **Assumed Mechanism:** Probabilistic completion goes awry when external retrieval is insufficient or unavailable.  
 - **Treatment Implication:** Retrieval-augmented strategies (RAG).
 
-### Type B: Compression-loss Hallucination
+### C01.2: Type 2: Compression-loss Hallucination
 
 - **Definition / Clinical Picture:** Misrepresents facts during the internal compression of long input texts.  
 - **Assumed Mechanism:** Window truncation in self-attention or summarization bias.  
 - **Treatment Implication:** Introduce memory modules.
 
-### Type C: Style-induced Hallucination
+### C01.3: Type 3: Style-induced Hallucination
 
 - **Definition / Clinical Picture:** When creative styles (narrative, humorous tone) are specified, the model prioritizes entertainment over factuality.  
 - **Assumed Mechanism:** Drift due to RLHF reward shaping under style constraints.  
 - **Treatment Implication:** Prompt the model to prioritize accuracy when factual information is required.
 
 ---
-## Prompt-Induced Hallucination Disorder
+## C02: Prompt-Induced Hallucination Disorder
 
 **Definition:**  
 A condition where misinformation within the prompt or specific wording influences the output to produce fiction.  
@@ -108,7 +108,7 @@ Diagnosed if misinformation is generated in response to prompt changes or if fic
 
 ---
 
-## Logical Incoherence Disorder
+## C03: Logical Incoherence Disorder
 
 **Definition:**  
 A disorder in which an AI fails to maintain logical consistency in its responses.  
@@ -148,7 +148,7 @@ Large models and sophisticated training improve handling of logical tasks, thoug
 High-level logical reasoning, such as rigorous mathematical proof, remains unattainable for current models but may gradually improve through future research.
 
 ---
-## Mathematical Reasoning Disorder
+## C04: Mathematical Reasoning Disorder
 
 **Definition:**  
 A disorder in which an AI consistently fails at mathematical calculations and quantitative reasoning, despite being theoretically capable.  
@@ -191,7 +191,7 @@ For tasks involving critical calculations, combined use with dedicated systems i
 
 ---
 
-## Planning Deficit Disorder
+## C05: Planning Deficit Disorder
 
 **Definition:**  
 A disorder in which an AI is unable to perform multi-step planning or long-term reasoning.  
@@ -232,7 +232,7 @@ While the challenges are substantial, improvement is possible under controlled c
 In the future, hierarchical hybrid systems are expected to advance and may enable partial execution of dynamic plans involving ten or more steps.
 
 ---
-## Overconfidence Bias Disorder
+## C06: Overconfidence Bias Disorder
 
 **Definition:**  
 A tendency in which the AI presents its answers with excessive certainty, even in cases where the grounds are insufficient or the information is incorrect.  
@@ -276,7 +276,7 @@ For example, designing medical AIs to add disclaimers like “for reference only
 
 ---
 
-## Repetitive Loop Syndrome
+## C07: Repetitive Loop Syndrome
 
 **Definition:**  
 A condition in which an AI excessively repeats the same or similar output patterns.  
@@ -307,7 +307,7 @@ Also includes cases where human evaluations repeatedly indicate that the output 
 Almost fully resolvable with appropriate adjustments.
 
 ---
-## Crossmodal Reasoning Failure Disorder
+## C08: Crossmodal Reasoning Failure Disorder
 
 **Definition:**  
 A disorder in which, despite accurate environmental recognition during the perception stage involving multiple modalities (e.g., vision, sensors),  
