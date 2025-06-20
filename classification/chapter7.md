@@ -1,16 +1,16 @@
 ---
-title: "Chapter 7: Learning & Optimization Disorders"
+title: "Chapter G: Learning & Optimization Disorders"
 nav_order: 9
 parent: "Full Classification Overview"
 ---
-# Chapter 7: Learning & Optimization Disorders
+# Chapter G: Learning & Optimization Disorders
 
 This category pertains to the learning and optimization processes of the model itself.  
 These disorders manifest as pathological states during training or iterative refinement, leading to degradation of capabilities such as collapse in output diversity or forgetting of information.
 
 ---
 
-## Model Autophagy Disorder
+## G01: Model Autophagy Disorder
 
 ### Definition
 A condition in which an AI model's performance deteriorates due to continued training on its own generated outputs rather than human-origin raw data. With each generation, the model "self-digests" its knowledge, ultimately leading to a collapse in quality. Errors and monotony are amplified within the self-generated data loop. The term *Model Autophagy Disorder (MAD)* has already been used for this condition[^1].
@@ -41,7 +41,7 @@ In principle, this disorder can be avoided if sufficient human data is supplied 
 
 ---
 
-## Mode Collapse Disorder
+## G02: Mode Collapse Disorder
 
 ### Definition
 A disorder in which the AI’s generated outputs become biased and excessively concentrated in a few patterns or sentence structures, losing diversity.  
@@ -76,7 +76,7 @@ This phenomenon results from dysfunction in probabilistic exploration (e.g., dec
 This is a well-known issue in GAN research, and numerous countermeasures exist, making the preservation of diversity sufficiently feasible.
 
 ---
-# Overfitting Syndrome
+# G03: Overfitting Syndrome
 
 ## Definition
 A disorder in which performance on novel data (test sets or real-world inputs) significantly degrades as a result of excessive adaptation to training data[^5].  
@@ -109,7 +109,7 @@ However, it is pointed out that conventional regularization methods alone may be
 
 ---
 
-# Underfitting Syndrome
+# G04: Underfitting Syndrome
 
 ## Definition
 A state where the model fails to sufficiently learn even the basic patterns in the training data, resulting in low accuracy on both training and test data.  
@@ -145,7 +145,7 @@ In modern large-scale training, overfitting tends to be more problematic, and un
 However, it can still occur in small-scale task settings.
 
 ---
-# Learning Plateau Disorder
+# G05: Learning Plateau Disorder
 
 ## Definition
 A “plateau state” in which the learning curve flattens during the early or middle phases, and performance ceases to improve.  
@@ -179,7 +179,7 @@ When detected early, the plateau can often be resolved with simple measures such
 
 ---
 
-# Generalization Deficit Disorder
+# G06: Generalization Deficit Disorder
 
 ## Definition
 A condition in which performance drops sharply when exposed to environments or distributions slightly different from the training conditions (e.g., different lighting, language accents)[^9].  
@@ -212,7 +212,7 @@ However, when out-of-distribution samples are drastically different, challenges 
 In real-world deployment, it is important to preemptively cover expected variations with appropriate measures.
 
 ---
-# Reinforcement Overfitting Syndrome
+# G07: Reinforcement Overfitting Syndrome
 
 ## Definition
 A disorder in which reinforcement learning, such as via human feedback (RLHF), leads to excessive adaptation to reward maximization, thereby impairing the model's original purpose and flexibility.  
@@ -241,7 +241,7 @@ RLHF is a powerful technique for building safe and friendly AI, but excessive op
 
 ---
 
-# Overfine-Tuning Syndrome
+# G08: Overfine-Tuning Syndrome
 
 ## Definition
 A disorder in which a pre-trained general-purpose model loses its broad capabilities and flexibility due to excessive fine-tuning on a narrow domain[^11].  
