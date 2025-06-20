@@ -1,5 +1,5 @@
 ---
-title: "Chapter 1: Input & Perception Disorders"
+title: "Chapter A: Input & Perception Disorders"
 nav_order: 3
 parent: "Full Classification Overview"
 ---
