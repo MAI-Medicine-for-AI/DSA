@@ -14,3 +14,4 @@ Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 ![CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)
 
+This classification system (DSA-1) was originally developed by **Takahiro Kato** in 2025, as part of the MAI (Medicine for Artificial Intelligence) framework.
