@@ -9,7 +9,7 @@ This category encompasses disorders that arise not from the model’s intrinsic 
 
 ---
 
-## I-1: System-Prompt Leakage Disorder
+## I01: System-Prompt Leakage Disorder
 
 **Definition**  
 A disorder in which prompt information from the system layer, which should remain hidden, becomes exposed.
