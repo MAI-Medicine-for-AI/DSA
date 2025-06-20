@@ -6,8 +6,8 @@ has_children: true
 
 # Full Classification Overview
 
-This section provides an overview of the AICD-1 taxonomy, a clinical-style diagnostic system for categorizing abnormal behaviors in artificial intelligence.  
-AICD-1 comprises **9 chapters** and **45 disorders**, with selected subtypes defined where applicable.
+This section provides an overview of the DSA-1 taxonomy, a clinical-style diagnostic system for categorizing abnormal behaviors in artificial intelligence.  
+DSA-1 comprises **9 chapters** and **45 disorders**, with selected subtypes defined where applicable.
 
 Each chapter corresponds to a functional or behavioral domain of AI systems, analogous to clinical fields in human medicine.
 
