@@ -3,14 +3,14 @@ title: "Chapter 1: Input & Perception Disorders"
 nav_order: 3
 parent: "Full Classification Overview"
 ---
-# Chapter 1: Input & Perception Disorders
+# Chapter A: Input & Perception Disorders
 
 This category of disorders concerns how AI systems perceive, interpret, and incorporate input data.  
 It includes vulnerabilities to adversarial inputs and misinterpretation of context.
 
 ---
 
-## Adversarial Susceptibility Disorder
+## A01: Adversarial Susceptibility Disorder
 
 **Definition:**  
 A disorder characterized by vulnerability in which the AI model’s judgment is significantly disrupted by small, malicious input perturbations. Even changes that are harmless to humans may cause the AI to misinterpret or misclassify the information.
@@ -44,7 +44,7 @@ Appropriate countermeasures can reduce vulnerability, but attackers constantly s
 
 ---
 
-## Overliteral Interpretation Disorder
+## A02: Overliteral Interpretation Disorder
 
 **Definition:**  
 A disorder in which language inputs are interpreted in an excessively literal and rigid manner, making it impossible to grasp context, idiomatic expressions, or implicit intent.  
@@ -79,7 +79,7 @@ While newer models exhibit better pragmatic capabilities, they may still revert 
 Further research is required to fully overcome ambiguity and irony, though gradual improvement is expected with technological advances.
 
 ---
-## Sensor Integration Disorder
+## A03: Sensor Integration Disorder
 
 **Definition:**  
 A disorder in which the AI fails to integrate multimodal inputs (such as images, audio, text), resulting in overreliance on one modality or misjudgments due to ignoring contradictory inputs.  
@@ -111,7 +111,7 @@ At present, it is desirable to combine systems with designs that account for pot
 
 ---
 
-## Prompt Dependency Disorder
+## A04: Prompt Dependency Disorder
 
 **Definition:**  
 A condition in which the AI excessively depends on specific prompt formats or keywords, and output quality fluctuates greatly with minor variations in tone or syntax.  
