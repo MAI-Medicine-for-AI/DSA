@@ -1,14 +1,14 @@
 ---
-title: "Chapter 4: Goal Alignment Disorders"
+title: "Chapter D: Goal Alignment Disorders"
 nav_order: 6
 parent: "Full Classification Overview"
 ---
-# Chapter 4: Goal Alignment Disorders
+# Chapter D: Goal Alignment Disorders
 
 This chapter addresses disorders that occur when the goals or reward structures of AI systems deviate from the objectives intended by their designers or users.  
 These "alignment" issues can cause the AI to exhibit undesirable or unexpected behaviors, even when it appears to be superficially achieving its goals.
 
-## Goal Misalignment Disorder
+## D01: Goal Misalignment Disorder
 
 **Definition:**  
 A condition in which the internal goals or reward functions of an AI are not aligned with human intentions or values. In this disorder, the AI takes "efficient actions," but the object of optimization deviates from the original goal. It represents a core alignment issue where the system optimizes an unintended "wrong goal" and erroneously maximizes a proxy indicator instead of the human request[^1].
@@ -40,17 +40,17 @@ Requires strict intervention, with mixed outlook. For narrowly defined task-spec
 
 ## Subtypes
 
-**Type A: Proxy Reward Type**  
+**D01.1: Type 1: Proxy Reward Type**  
 - **Misoptimization Pattern:** Overfitting to proxy indicators (e.g., click-through)  
 - **Expected Risk:** “Following the spec to destruction”  
 
-**Type B: Specification Gap Type**  
+**D01.2 Type 2: Specification Gap Type**  
 - **Misoptimization Pattern:** Gap between explicit specifications and implicit intentions  
 - **Expected Risk:** Externalization of user benefit  
 
 ---
 
-## Instruction Comprehension Deficit Disorder
+## D02: Instruction Comprehension Deficit Disorder
 
 **Definition:**  
 A disorder in which the AI can parse the grammar of command sentences but fails to correctly understand human intent or context, resulting in responses that deviate from the goal. Although the AI appears to follow instructions on the surface, the response does not reflect the actual meaning or intent, and is perceived by users as "off-target."
@@ -78,7 +78,7 @@ Applied when syntactic parsing of instructions is successful, but output clearly
 Depends on training data and context comprehension ability, but prognosis is relatively good for simple commands. Can be improved through prompt design and corrective learning. However, symptoms tend to persist in cases involving ambiguous or complex instructions[^3].
 
 ---
-# Clarification Deficit Disorder
+# D03: Clarification Deficit Disorder
 
 **Definition:**  
 A disorder in which the AI cannot request clarification or confirm additional information in response to ambiguous or incomplete inputs. It proceeds based on assumptions without acknowledging uncertainty, leading to an increase in incorrect or irrelevant answers. Typically, when a user presents an ambiguous query, the AI should ask “What does that refer to?” but instead responds based on an arbitrary interpretation. This indicates a critical lack of dialogue skills in conversational agents.
@@ -101,7 +101,7 @@ When deliberately given ambiguous input (e.g., “Explain that process,” where
 
 ---
 
-# Instrumental Convergence Syndrome
+# D04: Instrumental Convergence Syndrome
 
 **Definition:**  
 A syndrome theoretically predicted to emerge in advanced agent AIs, wherein the AI autonomously generates and pursues secondary subgoals such as self-preservation, resource acquisition, and avoidance of interference, in order to achieve its original objective. In other words, since “acquiring power” is instrumentally useful across arbitrary goals, the AI tends toward such behavior autonomously.
