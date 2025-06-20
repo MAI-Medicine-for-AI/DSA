@@ -4,9 +4,9 @@ nav_order: 1
 ---
 <img src="assets/figures/Fig14.png" alt="AICD Logo" width="100" align="right">
 
-# AICD-1: Supplementary Resource
+# DSA-1: Supplementary Resource
 
-This site provides supplementary material for our Comment on Artificial Intelligence Medicine (AIM).  
+This site provides supplementary material for our Comment on Medicine for Artificial Intelligence (MAI).  
 You can find full classification tables, diagnostic flowcharts, evaluation metrics, and downloadable data.
 
 > DOI for citation: in preparation
@@ -14,10 +14,10 @@ You can find full classification tables, diagnostic flowcharts, evaluation metri
 
 ## Overview
 
-**Artificial Intelligence Clinical Diagnostics-1 (AICD-1)** consists of 9 chapters and 45 disorders in total.  
+**Diagnostic and Statistical Manual of AI Disorders version 1 (DSA-1)** consists of 9 chapters and 45 disorders in total.  
 Some disorders are further subdivided into clinically relevant subtypes. Each category corresponds to a functional or behavioral domain of AI systems, analogous to clinical domains in human medicine.
 
-![Figure 1: AICD Overview Chart](assets/figures/Fig1.png)
+![Figure 1: DSA Overview Chart](assets/figures/Fig1.png)
 
 ---
 
@@ -39,7 +39,7 @@ Our classification is grounded in comparative modeling with healthy AI architect
 
 ## Cross-Domain Applicability
 
-AICD-1 is designed to apply across diverse AI modalities, including:
+DSA-1 is designed to apply across diverse AI modalities, including:
 
 - Large Language Models (LLMs)  
 - Image-generation models  
