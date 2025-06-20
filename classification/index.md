@@ -13,7 +13,7 @@ Each chapter corresponds to a functional or behavioral domain of AI systems, ana
 
 ---
 
-## Chapters & Disorders in AICD-1
+## Chapters & Disorders in DSA-1
 
 Below is a full list of disorders classified under each chapter.
 
