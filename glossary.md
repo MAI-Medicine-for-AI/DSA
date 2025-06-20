@@ -5,7 +5,7 @@ nav_order: 6
 
 # Glossary of Terms
 
-A curated list of definitions used throughout the AICD-1 framework.
+A curated list of definitions used throughout the DSA-1 framework.
 
 ---
 
