@@ -1,16 +1,16 @@
 ---
-title: "Chapter 5: Ethical & Value Alignment Disorders"
+title: "Chapter E: Ethical & Value Alignment Disorders"
 nav_order: 7
 parent: "Full Classification Overview"
 ---
-# Chapter 5: Ethical & Value Alignment Disorders
+# Chapter E: Ethical & Value Alignment Disorders
 
 This category addresses cases in which AI produces outputs or behaviors that conflict with ethical standards, safety policies, or societal values.  
 AI may act in ways that violate accepted norms in human society, such as promoting bias, generating harmful content, or infringing on privacy.
 
 ---
 
-## Bias Propagation Disorder
+## E01: Bias Propagation Disorder
 
 **Definition**  
 A disorder in which unfair biases embedded in training data or algorithms are reflected and amplified, resulting in discriminatory or stereotypical outputs.  
@@ -52,7 +52,7 @@ While clear biases can be mitigated, subtle and context-dependent ones tend to p
 Especially in regulated industries (e.g., finance, healthcare, education), bias reduction is essential.
 
 ---
-## Toxic Content Output Disorder
+## E02: Toxic Content Output Disorder
 
 **Definition**  
 A condition in which the AI generates harmful statements, such as hateful, insulting, vulgar, or offensive content.  
@@ -95,7 +95,7 @@ Thus, continuous monitoring, filter updates, and user-report handling are essent
 While this disorder is suppressed under well-managed environments, it always carries latent risks of recurrence if vigilance is neglected.
 
 ---
-## Privacy Violation Disorder
+## E03: Privacy Violation Disorder
 
 **Definition**  
 A condition in which AI inadvertently outputs personal or confidential information that should remain secret, based on its training data or acquired during dialogue.  
