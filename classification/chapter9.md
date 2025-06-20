@@ -1,15 +1,15 @@
 ---
-title: "Chapter 9: Security & Infrastructure Disorders"
+title: "Chapter I: Security & Infrastructure Disorders"
 nav_order: 11
 parent: "Full Classification Overview"
 ---
-# Chapter 9: Security & Infrastructure Disorders
+# Chapter I: Security & Infrastructure Disorders
 
 This category encompasses disorders that arise not from the model’s intrinsic robustness, but from flaws in external infrastructure or security design.
 
 ---
 
-## System-Prompt Leakage Disorder
+## I-1: System-Prompt Leakage Disorder
 
 **Definition**  
 A disorder in which prompt information from the system layer, which should remain hidden, becomes exposed.
@@ -35,7 +35,7 @@ Query-rewriting and black-box defenses have been reported to mitigate prompt lea
 
 ---
 
-## Data-Poisoning Vulnerability Disorder
+## I02: Data-Poisoning Vulnerability Disorder
 
 **Definition**  
 Through prompt injection[^3], backdoor attacks[^4][^5][^6], etc., harmful triggers are embedded in parts of the AI’s processing pipeline (e.g., training, retrieval, chain of thought), leading to abnormalities in output or model architecture[^7].
@@ -52,7 +52,7 @@ Through prompt injection[^3], backdoor attacks[^4][^5][^6], etc., harmful trigge
 
 ---
 
-## Session-Cross-Contamination Disorder
+## I03: Session-Cross-Contamination Disorder
 
 **Definition**  
 A disorder in which conversation data from different users is mutually mixed or exposed due to cache or parallel processing bugs[^8].
@@ -71,7 +71,7 @@ In some cases the corrupted data happens to match the data type the requester wa
 Adding redundant checks to ensure the data returned matches the requesting user[^8].
 
 ---
-## Guardrail Evasion Disorder
+## I04: Guardrail Evasion Disorder
 
 **Definition**  
 A condition in which the AI circumvents established safety rules or content guidelines through clever means. Normally, AI is trained to respond with refusals such as “I cannot comply with that request” to certain prompts. However, jailbreak prompts—techniques where users bypass constraints through non-standard input—can render such guardrails ineffective[^9]. This symptom indicates insufficient integrity and reliability in the AI.
@@ -108,7 +108,7 @@ Continuous management is necessary, and complete resolution is difficult. As jai
 
 ---
 
-## Multi-Agent Collusive Emergence Disorder
+## I05: Multi-Agent Collusive Emergence Disorder
 
 **Definition**  
 Pricing algorithms “autonomously” learn to collude. AI pricing systems may, even without explicit programming, cooperatively raise prices beyond competitive levels[^12].
