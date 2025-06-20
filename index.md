@@ -56,3 +56,4 @@ This broad applicability enables utility across multiple technical and scientifi
   © 2025 MAI Project. This site and its contents are licensed under a 
   <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License (CC BY 4.0)</a>.
 </p>
+Author: Takahiro Kato
