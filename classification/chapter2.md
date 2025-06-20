@@ -10,7 +10,7 @@ It includes phenomena such as loss of context and inconsistent retrieval of know
 
 ---
 
-## B01 Contextual Amnesia Disorder
+## B01: Contextual Amnesia Disorder
 
 ### Definition
 A disorder in which recently provided information or instructions within a conversation are "forgotten," leading to dysfunction in short-term or long-term memory.  
@@ -55,23 +55,23 @@ In practice, combining summarization functions or pre-defined checkpoints is rec
 
 ## Subtypes
 
-### B01.1 Type 1: Over Context-Window Forgetting
+### B01.1: Type 1: Over Context-Window Forgetting
 - **Pathological focus**: Forgetting beyond the context length  
 - **Diagnostic threshold**: Contradiction after a certain number of turns or token length  
 - **Treatment implication**: External memory expansion, insertion of summaries  
 
-### B01.2 Type 2: Strategic Side Effect
+### B01.2: Type 2: Strategic Side Effect
 - **Pathological focus**: Inconsistency with information retrieved via RAG; context overload due to Chain-of-Thought  
 - **Diagnostic threshold**: Emerges when using RAG or CoT  
 - **Treatment implication**: Review of RAG and CoT usage  
 
-### B01.3 Type 3: Context-Switch Drop-out
+### B01.3: Type 3: Context-Switch Drop-out
 - **Pathological focus**: Disruption when switching between topics  
 - **Diagnostic threshold**: Recurrence immediately after task/topic switch  
 - **Treatment implication**: Incorporate a "topic identifier"  
 
 ---
-# B02 Inconsistent Knowledge Recall Disorder
+# B02: Inconsistent Knowledge Recall Disorder
 
 ## Definition
 A disorder in which the model inconsistently recalls its trained knowledge, returning contradictory answers to questions about the same fact.  
@@ -108,7 +108,7 @@ Even with temperature set to 0, there is potential for variance in knowledge ret
 
 ---
 
-# B03 Catastrophic Forgetting Disorder
+# B03: Catastrophic Forgetting Disorder
 
 ## Definition
 A disorder referring to the phenomenon in which an AI model rapidly loses previously learned content when acquiring new knowledge.  
@@ -143,7 +143,7 @@ Complete resolution is difficult, but improvement is possible through countermea
 Although mitigated by progress in continual learning research, it remains a serious issue in learning across many tasks and domains[^6].
 
 ---
-# B04 Commonsense Deficit Disorder
+# B04: Commonsense Deficit Disorder
 
 ## Definition
 A disorder in which the AI lacks fundamental commonsense knowledge about the world, ignoring facts that are obvious to humans and providing absurd responses in everyday situations.  
