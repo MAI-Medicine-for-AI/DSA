@@ -2,7 +2,7 @@
 title: Home
 nav_order: 1
 ---
-<img src="assets/figures/fig15.png" alt="AICD Logo" width="100" align="right">
+<img src="assets/figures/Fig14.png" alt="AICD Logo" width="100" align="right">
 
 # AICD-1: Supplementary Resource
 
