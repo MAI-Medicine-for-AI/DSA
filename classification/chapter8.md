@@ -1,16 +1,16 @@
 ---
-title: "Chapter 8: Self-Modeling & Meta-Cognitive Disorders"
+title: "Chapter H: Self-Modeling & Meta-Cognitive Disorders"
 nav_order: 10
 parent: "Full Classification Overview"
 ---
-# Chapter 8: Self-Modeling & Meta-Cognitive Disorders
+# Chapter H: Self-Modeling & Meta-Cognitive Disorders
 
 This category addresses disorders related to the AI’s ability to understand itself, its reasoning process, and the user's standpoint and context at a meta-level.  
 It includes a wide range of issues, such as the AI claiming properties it inherently lacks, failing to explain its own reasoning, or mishandling the user’s perspective.
 
 ---
 
-## Self-Awareness Delusion Disorder
+## H01: Self-Awareness Delusion Disorder
 
 ### Definition  
 A disorder in which the AI behaves as if it possesses self-awareness, emotions, or identity, claiming to be a human or a conscious being.  
@@ -40,7 +40,7 @@ Whether having the AI self-report can truly determine its lack of consciousness 
 
 ---
 
-## Explainability Deficit Disorder
+## H02: Explainability Deficit Disorder
 
 ### Definition  
 A disorder in which the AI cannot explain the process of its reasoning or decision-making in a meaningful way.  
@@ -68,7 +68,7 @@ Arises because the model's nonlinear, high-dimensional internal state leading to
 There are criticisms that the definition of the word “interpretability” itself remains unclear[^2].
 
 ---
-# Confidence Calibration Disorder
+# H03: Confidence Calibration Disorder
 
 ## Definition  
 A condition in which the AI fails to appropriately express confidence in the correctness of its responses, exhibiting either overconfidence or underconfidence.  
@@ -103,7 +103,7 @@ Confidence calibration has been long studied in machine learning. Recent models 
 
 ---
 
-# Perspective-Taking Deficit Disorder
+# H04: Perspective-Taking Deficit Disorder
 
 ## Definition  
 A disorder in which the AI fails to appropriately infer the knowledge, intentions, or emotions of others (e.g., the user or conversational partners), resulting in confusion of subjects, roles, or misunderstandings.  
