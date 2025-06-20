@@ -9,15 +9,15 @@ nav:
   - Home: index.md
   - Full Classification:
     　- Overview: classification/index.md
-    　- Chapter 1: classification/chapter1.md
-    　- Chapter 2: classification/chapter2.md
-    　- Chapter 3: classification/chapter3.md
-    　- Chapter 4: classification/chapter4.md
-    　- Chapter 5: classification/chapter5.md
-    　- Chapter 6: classification/chapter6.md
-    　- Chapter 7: classification/chapter7.md
-    　- Chapter 8: classification/chapter8.md
-    　- Chapter 9: classification/chapter9.md
+    　- Chapter A: classification/chapter1.md
+    　- Chapter B: classification/chapter2.md
+    　- Chapter C: classification/chapter3.md
+    　- Chapter D: classification/chapter4.md
+    　- Chapter E: classification/chapter5.md
+    　- Chapter F: classification/chapter6.md
+    　- Chapter G: classification/chapter7.md
+    　- Chapter H: classification/chapter8.md
+    　- Chapter I: classification/chapter9.md
   - Case Studies: case-studies.md
   - Diagnostic Algorithms: diagnostics.md
   - Evaluation Metrics: evaluation.md
