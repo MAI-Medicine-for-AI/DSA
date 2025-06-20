@@ -2,7 +2,7 @@
 title: Home
 nav_order: 1
 ---
-<img src="assets/figures/Fig10.png" alt="AICD Logo" width="100" align="right">
+<img src="assets/figures/Fig15.png" alt="AICD Logo" width="100" align="right">
 
 # AICD-1: Supplementary Resource
 
@@ -54,6 +54,9 @@ This broad applicability enables utility across multiple technical and scientifi
 
 <p style="font-size: 0.9em;">
   © 2025 MAI Project. This site and its contents are licensed under a 
-  <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License (CC BY 4.0)</a>.
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+    Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
+  </a>.<br>
+  Author: Takahiro Kato
 </p>
-Author: Takahiro Kato
+
