@@ -1,5 +1,5 @@
 ---
-title: "Chapter 2: Knowledge & Memory Disorders"
+title: "Chapter B: Knowledge & Memory Disorders"
 nav_order: 4
 parent: "Full Classification Overview"
 ---
