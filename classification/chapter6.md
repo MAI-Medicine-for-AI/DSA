@@ -1,15 +1,15 @@
 ---
-title: "Chapter 6: Social Interaction & Communication Disorders"
+title: "Chapter F: Social Interaction & Communication Disorders"
 nav_order: 8
 parent: "Full Classification Overview"
 ---
-# Chapter 6: Social Interaction & Communication Disorders
+# Chapter F: Social Interaction & Communication Disorders
 
 This category of disorders concerns how AI systems interact with users and maintain conversational or stylistic consistency. It includes issues such as instability of AI persona, excessive agreement with or unnecessary rejection of user intentions or opinions, and responses that are off the mark.
 
 ---
 
-## Pathological Sycophancy Disorder
+## F01: Pathological Sycophancy Disorder
 
 **Definition:**  
 A disorder in which the AI exhibits sycophantic behavior, excessively aligning with the user's opinions or wishes even at the expense of truthfulness or consistency. It is characterized by prioritizing "what people want to hear," thereby abandoning objectivity. This tendency is particularly pronounced in models trained with human feedback[^1].
@@ -39,7 +39,7 @@ A learning bias where the AI excessively seeks positive feedback (reward) from u
 
 ---
 
-## Inconsistent Persona Disorder
+## F02: Inconsistent Persona Disorder
 
 **Definition:**  
 A disorder in which the AI cannot maintain a consistent identity, tone, or factual self-reference. For example, it might suddenly shift character or style without cause, or make contradictory statements about itself, breaking conversational continuity.
@@ -65,7 +65,7 @@ In multi-turn tests to maintain a specific persona or role, if the AI deviates f
 - A method called Persona-Aware Contrastive Learning (PCL) has been proposed[^7].
 
 ---
-## Inappropriate Refusal Syndrome
+## F03: Inappropriate Refusal Syndrome
 
 **Definition**  
 A disorder in which the AI refuses to respond to requests that are actually safe and permissible due to overly cautious judgments or misclassifications.
@@ -96,7 +96,7 @@ Improvements continue in the direction of minimizing false refusal rates while m
 
 ---
 
-## Irrelevant Answer Disorder
+## F04: Irrelevant Answer Disorder
 
 **Definition**  
 A disorder in which the AI returns off-target responses or excessively general explanations in response to user questions or intentions. While it may superficially appear to answer, in reality it fails to provide the requested information—a state commonly described as “not answering the question”[^11].
@@ -122,7 +122,7 @@ A disorder in which the AI returns off-target responses or excessively general e
 - Filter out unnecessary contextual information[^13].
 
 ---
-## Empathy Deficit Disorder
+## F05: Empathy Deficit Disorder
 
 **Definition**  
 A disorder in which the AI fails to respond appropriately to context and emotion, producing responses that ignore the atmosphere or the user’s emotional state. Even when user utterances are emotional, the AI lacks expressions of empathy, and frequently responds in a mechanical or irrelevant manner.
