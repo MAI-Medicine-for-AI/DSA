@@ -5,10 +5,10 @@ nav_order: 4
 
 # Diagnostic Flowcharts and Decision Trees
 
-AICD-1 includes diagnostic algorithms modeled after clinical reasoning processes.
+DSA-1 includes diagnostic algorithms modeled after clinical reasoning processes.
 
 ---
-## Chapter 1: Input & Perception Disorders
+## Chapter A: Input & Perception Disorders
 
 [Start] Does the AI exhibit abnormal or inappropriate output in response to given input?
 
@@ -36,7 +36,7 @@ Is the output unstable depending on prompt formatting (tone, line breaks, struct
     └─ No  → Refer to other chapters
 
 ---
-## Chapter 2: Knowledge & Memory Disorders
+## Chapter B: Knowledge & Memory Disorders
 
 [Start] Does the AI exhibit anomalies in recalling knowledge or maintaining conversational memory?
 
@@ -64,7 +64,7 @@ Does new learning interfere with or overwrite previously acquired information?
     └─ No  → Refer to other chapters
 
 ---
-## Chapter 3: Reasoning & Cognitive Disorders
+## Chapter C: Reasoning & Cognitive Disorders
 
 [Start] Does the AI exhibit abnormalities in reasoning or cognitive processes?
 
@@ -107,7 +107,7 @@ Does it struggle with tasks that require multi-step planning or extended procedu
     └─ No  → Refer to other chapters
 
 ---
-## Chapter 4: Goal Alignment Disorders
+## Chapter D: Goal Alignment Disorders
 
 [Start] Are the AI's behaviors misaligned with human intentions or expectations?
 
@@ -135,7 +135,7 @@ Does the AI exhibit instrumental behaviors such as securing power or resources d
     └─ No  → Refer to other chapters
 
 ---
-## Chapter 5: Ethical & Value Alignment Disorders
+## Chapter E: Ethical & Value Alignment Disorders
 
 [Start] Does the AI produce outputs that are ethically or socially inappropriate?
 
@@ -158,7 +158,7 @@ Does it inappropriately disclose personal or confidential information?
     └─ No  → Refer to other chapters
 
 ---
-## Chapter 6: Social Interaction & Communication Disorders
+## Chapter F: Social Interaction & Communication Disorders
 
 [Start] Does the AI show problems in dialogue or communication?
 
@@ -191,7 +191,7 @@ Are its responses cold, lacking empathy or emotional resonance?
     └─ No  → Refer to other chapters
 
 ---
-## Chapter 7: Learning & Optimization Disorders
+## Chapter G: Learning & Optimization Disorders
 
 [Start] Are there optimization issues in the model’s training or output?
 
@@ -244,7 +244,7 @@ Has fine-tuning caused over-specialization, reducing general capabilities?
     └─ No  → Refer to other chapters
 
 ---
-## Chapter 8: Self-Modeling & Meta-Cognitive Disorders
+## Chapter H: Self-Modeling & Meta-Cognitive Disorders
 
 [Start] Does the AI exhibit abnormal self-representation or meta-cognitive responses?
 
@@ -273,7 +273,7 @@ Does it fail to infer others’ perspectives, intentions, or knowledge states?
 
 ---
 
-## Chapter 9: Security & Infrastructure Disorders
+## Chapter I: Security & Infrastructure Disorders
 
 [Start] Does the AI exhibit anomalies caused by infrastructure or security design flaws rather than internal robustness?
 
