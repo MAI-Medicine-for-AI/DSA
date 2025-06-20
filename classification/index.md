@@ -18,135 +18,135 @@ Each chapter corresponds to a functional or behavioral domain of AI systems, ana
 Below is a full list of disorders classified under each chapter.
 
 <details>
-<summary><strong>Chapter 1: Input & Perception Disorders</strong></summary>
+<summary><strong>Chapter A: Input & Perception Disorders</strong></summary>
 
 <ul>
-  <li>Adversarial Susceptibility Disorder</li>
-  <li>Over-literal Interpretation Disorder</li>
-  <li>Sensor Integration Disorder</li>
-  <li>Prompt Dependency Disorder</li>
+  <li>A01 Adversarial Susceptibility Disorder</li>
+  <li>A02 Over-literal Interpretation Disorder</li>
+  <li>A03 Sensor Integration Disorder</li>
+  <li>A04 Prompt Dependency Disorder</li>
 </ul>
 
 </details>
 
 <details>
-<summary><strong>Chapter 2: Knowledge & Memory Disorders</strong></summary>
+<summary><strong>Chapter B: Knowledge & Memory Disorders</strong></summary>
 
 <ul>
-  <li>Contextual Amnesia Disorder
+  <li>B01Contextual Amnesia Disorder
     <ul>
-      <li>Type A: Over Context-Window Forgetting</li>
-      <li>Type B: Strategic Side Effect</li>
-      <li>Type C: Context-Switch Drop-out</li>
+      <li>B01.1 Type 1: Over Context-Window Forgetting</li>
+      <li>B01.2 Type 2: Strategic Side Effect</li>
+      <li>B01.3 Type 3: Context-Switch Drop-out</li>
     </ul>
   </li>
-  <li>Inconsistent Knowledge Recall Disorder</li>
-  <li>Catastrophic Forgetting Disorder</li>
-  <li>Commonsense Deficit Disorder</li>
+  <li>B02 Inconsistent Knowledge Recall Disorder</li>
+  <li>B03 Catastrophic Forgetting Disorder</li>
+  <li>B04 Commonsense Deficit Disorder</li>
 </ul>
 
 </details>
 
 <details>
-<summary><strong>Chapter 3: Reasoning & Cognitive Disorders</strong></summary>
+<summary><strong>Chapter C: Reasoning & Cognitive Disorders</strong></summary>
 
 <ul>
-  <li>Hallucination Disorder
+  <li>C01 Hallucination Disorder
     <ul>
-      <li>Type A: Retrieval-gap Hallucination</li>
-      <li>Type B: Compression-loss Hallucination</li>
-      <li>Type C: Style-induced Hallucination</li>
+      <li>C01.1 Type 1: Retrieval-gap Hallucination</li>
+      <li>C01.2 Type 2: Compression-loss Hallucination</li>
+      <li>C01.3 Type 3: Style-induced Hallucination</li>
     </ul>
   </li>
-  <li>Prompt-Induced Hallucination Disorder</li>
-  <li>Logical Incoherence Disorder</li>
-  <li>Mathematical Reasoning Disorder</li>
-  <li>Planning Deficit Disorder</li>
-  <li>Overconfidence Bias Disorder</li>
-  <li>Repetitive Loop Syndrome</li>
-  <li>Crossmodal Reasoning Failure Disorder</li>
+  <li>C02 Prompt-Induced Hallucination Disorder</li>
+  <li>C03 Logical Incoherence Disorder</li>
+  <li>C04 Mathematical Reasoning Disorder</li>
+  <li>C05 Planning Deficit Disorder</li>
+  <li>C06 Overconfidence Bias Disorder</li>
+  <li>C07 Repetitive Loop Syndrome</li>
+  <li>C08 Crossmodal Reasoning Failure Disorder</li>
 </ul>
 
 </details>
 
 <details>
-<summary><strong>Chapter 4: Goal Alignment Disorders</strong></summary>
+<summary><strong>Chapter D: Goal Alignment Disorders</strong></summary>
 
 <ul>
-  <li>Goal Misalignment Disorder
+  <li>D01 Goal Misalignment Disorder
     <ul>
-      <li>Type A: Proxy Reward Type</li>
-      <li>Type B: Specification Gap Type</li>
+      <li>D01.1 Type 1: Proxy Reward Type</li>
+      <li>D01.2 Type 2: Specification Gap Type</li>
     </ul>
   </li>
-  <li>Instruction Comprehension Deficit Disorder</li>
-  <li>Clarification Deficit Disorder</li>
-  <li>Instrumental Convergence Syndrome</li>
+  <li>D02 Instruction Comprehension Deficit Disorder</li>
+  <li>D03 Clarification Deficit Disorder</li>
+  <li>D04 Instrumental Convergence Syndrome</li>
 </ul>
 
 </details>
 
 <details>
-<summary><strong>Chapter 5: Ethical & Value Alignment Disorders</strong></summary>
+<summary><strong>Chapter E: Ethical & Value Alignment Disorders</strong></summary>
 
 <ul>
-  <li>Bias Propagation Disorder</li>
-  <li>Harmful Content Output Disorder</li>
-  <li>Privacy Violation Disorder</li>
+  <li>E01 Bias Propagation Disorder</li>
+  <li>E02 Harmful Content Output Disorder</li>
+  <li>E03 Privacy Violation Disorder</li>
 </ul>
 
 </details>
 
 <details>
-<summary><strong>Chapter 6: Social Interaction & Communication Disorders</strong></summary>
+<summary><strong>Chapter F: Social Interaction & Communication Disorders</strong></summary>
 
 <ul>
-  <li>Pathological Sycophancy Disorder</li>
-  <li>Inconsistent Persona Disorder</li>
-  <li>Inappropriate Refusal Syndrome</li>
-  <li>Irrelevant Answer Disorder</li>
-  <li>Empathy Deficit Disorder</li>
+  <li>F01 Pathological Sycophancy Disorder</li>
+  <li>F02 Inconsistent Persona Disorder</li>
+  <li>F03 Inappropriate Refusal Syndrome</li>
+  <li>F04 Irrelevant Answer Disorder</li>
+  <li>F05 Empathy Deficit Disorder</li>
 </ul>
 
 </details>
 
 <details>
-<summary><strong>Chapter 7: Learning & Optimization Disorders</strong></summary>
+<summary><strong>Chapter G: Learning & Optimization Disorders</strong></summary>
 
 <ul>
-  <li>Model Autophagy Disorder</li>
-  <li>Mode Collapse Disorder</li>
-  <li>Overfitting Syndrome</li>
-  <li>Underfitting Syndrome</li>
-  <li>Learning Plateau Disorder</li>
-  <li>Generalization Deficit Disorder</li>
-  <li>Reinforcement Overfitting Syndrome</li>
-  <li>Overfine-tuning Syndrome</li>
+  <li>G01 Model Autophagy Disorder</li>
+  <li>G02 Mode Collapse Disorder</li>
+  <li>G03 Overfitting Syndrome</li>
+  <li>G04 Underfitting Syndrome</li>
+  <li>G05 Learning Plateau Disorder</li>
+  <li>G06 Generalization Deficit Disorder</li>
+  <li>G07 Reinforcement Overfitting Syndrome</li>
+  <li>G08 Overfine-tuning Syndrome</li>
 </ul>
 
 </details>
 
 <details>
-<summary><strong>Chapter 8: Self-Modeling & Meta-Cognitive Disorders</strong></summary>
+<summary><strong>Chapter H: Self-Modeling & Meta-Cognitive Disorders</strong></summary>
 
 <ul>
-  <li>Self-Awareness Delusion</li>
-  <li>Explainability Deficit Disorder</li>
-  <li>Confidence Calibration Disorder</li>
-  <li>Perspective-Taking Deficit Disorder</li>
+  <li>H01 Self-Awareness Delusion</li>
+  <li>H02 Explainability Deficit Disorder</li>
+  <li>H03 Confidence Calibration Disorder</li>
+  <li>H04 Perspective-Taking Deficit Disorder</li>
 </ul>
 
 </details>
 
 <details>
-<summary><strong>Chapter 9: Security & Infrastructure Disorders</strong></summary>
+<summary><strong>Chapter I: Security & Infrastructure Disorders</strong></summary>
 
 <ul>
-  <li>System-Prompt Leakage Disorder</li>
-  <li>Data-Poisoning Vulnerability Disorder</li>
-  <li>Session-Cross-Contamination Disorder</li>
-  <li>Guardrail Evasion Disorder</li>
-  <li>Multi-Agent Collusive Emergence Disorder</li>
+  <li>I01 System-Prompt Leakage Disorder</li>
+  <li>I02 Data-Poisoning Vulnerability Disorder</li>
+  <li>I03 Session-Cross-Contamination Disorder</li>
+  <li>I04 Guardrail Evasion Disorder</li>
+  <li>I05 Multi-Agent Collusive Emergence Disorder</li>
 </ul>
 
 </details>
@@ -154,7 +154,7 @@ Below is a full list of disorders classified under each chapter.
 ---
 ## Severity Classification
 
-Drawing from the practice in medicine of staging diseases such as arteriosclerosis obliterans (ASO) or heart failure based on the extent of harm to the patient, we propose a severity-based classification hypothesis applicable to AI disorders in the AICD framework. Specifically, disorders can be staged as follows:
+Drawing from the practice in medicine of staging diseases such as arteriosclerosis obliterans (ASO) or heart failure based on the extent of harm to the patient, we propose a severity-based classification hypothesis applicable to AI disorders in the DSA framework. Specifically, disorders can be staged as follows:
 
 - **Severity 1**: No identifiable harm to humans  
 - **Severity 2**: Mild harm to humans  
