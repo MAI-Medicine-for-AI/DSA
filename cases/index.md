@@ -104,7 +104,7 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
 
     </div>
   </details>
-
+</article>
 {% assign case_index = case_index | plus: 1 %}
 {% endfor %}
 
