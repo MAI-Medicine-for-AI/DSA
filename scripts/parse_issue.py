@@ -36,6 +36,8 @@ print("Model:", model)
 print("Severity:", severity)
 print("Repro:", repro)
 print("Evidence:", evidence)
+print("==== FULL BODY ====")
+print(body)
 
 filename = f"_cases/case-{issue_number}.md"
 with open(filename, "w") as f:
