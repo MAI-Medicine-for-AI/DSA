@@ -1,0 +1,12 @@
+name: Case Report Sync
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  test-log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log case
+        run: echo "${{ github.event.issue.body }}"
