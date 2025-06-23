@@ -31,7 +31,7 @@ def extract(field):
 title = escape(issue["title"])
 disorder = escape(extract("Disorder code (DSA-1)"))
 model = escape(extract("Model / Version"))
-severity = escape(extract("Severity (1 = mild, 5 = catastrophic)"))
+severity = escape(extract("Severity (DSA-1)"))
 repro = extract("Failure description & reproduction steps")  # このままMarkdown本文用に
 evidence = extract("Evidence (e.g., URLs, logs)")
 
