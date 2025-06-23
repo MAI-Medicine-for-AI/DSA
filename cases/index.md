@@ -42,14 +42,13 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
   {% assign disorder_code = case.disorder | strip | split: " " | first %}
   {% assign chapter_letter = disorder_code | slice: 0, 1 | upcase %}
 
-
 <article 
   class="case-entry"
   style="margin-bottom: 3em; padding: 1.5em; border-left: 4px solid #ccc; background: #f9f9f9;"
   data-chapter="{{ chapter_letter }}"
   data-severity="{{ case.severity | slice: 0, 1 }}">
 
-　　<p><strong>Debug:</strong> disorder="{{ case.disorder }}", chapter="{{ chapter_letter }}"</p>
+  <p><strong>Debug:</strong> disorder="{{ case.disorder }}", chapter="{{ chapter_letter }}"</p>
 
   {% if case.disorder %}
     <p><strong>Disorder code (DSA-1):</strong> {{ case.disorder }}</p>
