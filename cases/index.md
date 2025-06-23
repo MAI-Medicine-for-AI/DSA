@@ -10,6 +10,11 @@ This section lists all AI anomaly cases submitted by the community using the DSA
 Each case includes a structured report with the model name, symptoms, severity, and reproduction steps.
 
 ---
+<a class="btn" href="https://github.com/MAI-Medicine-of-Artificial-Intelligence/DSA/issues/new?template=case_report.yml">
+  🩺 Report a Case
+</a>
+
+---
 
 {% assign sorted_cases = site.cases | sort: "title" %}
 {% for case in sorted_cases %}
