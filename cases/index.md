@@ -13,7 +13,7 @@ Each case includes a structured report with the model name, symptoms, severity, 
 
 {% assign sorted_cases = site.cases | sort: "title" %}
 {% for case in sorted_cases %}
-  <article style="margin-bottom: 2em; padding: 1em; border-left: 4px solid #ccc;">
+  <article style="margin-bottom: 2em; padding: 1em; border-left: 4px solid #ccc; background: #f9f9f9;">
     <h2 style="margin-bottom: 0.2em;">{{ case.title }}</h2>
     {% if case.disorder %}
       <p><strong>Disorder:</strong> {{ case.disorder }}</p>
@@ -25,9 +25,13 @@ Each case includes a structured report with the model name, symptoms, severity, 
       <p><strong>Severity:</strong> {{ case.severity }}</p>
     {% endif %}
     {% if case.repro %}
-      <p><strong>Summary:</strong><br>{{ case.repro | markdownify | truncatewords: 40 }}</p>
+      <p><strong>Summary:</strong><br>{{ case.repro | markdownify }}</p>
     {% endif %}
-    <a href="{{ case.url }}">→ View Full Case</a>
+    {% if case.evidence and case.evidence != "_No response_" %}
+      <p><strong>Evidence:</strong><br>{{ case.evidence | markdownify }}</p>
+    {% endif %}
+    <p><a href="{{ case.url }}">→ View Full Case</a></p>
   </article>
 {% endfor %}
+
 
