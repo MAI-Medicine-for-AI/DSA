@@ -55,11 +55,12 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
   data-severity="{{ case.severity | slice: 0, 1 }}">
 
 
- {% assign filename = case.path | split: "/" | last | split: "." | first %}
+  {% assign filename = case.path | split: "/" | last | split: "." | first | remove: "-" %}
+  {% assign disorder_code = case.disorder | strip | split: " " | first %}
 
   {% if case.title %}
     <h3 style="margin-top: 0.5em;">
-      📝 {{ filename }}{% if case.disorder %} – {{ case.disorder }}{% endif %}: {{ case.title }}
+      📝 {{ filename }} – {{ disorder_code }}: {{ case.title }}
     </h3>
   {% endif %}
 
