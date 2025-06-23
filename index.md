@@ -51,6 +51,11 @@ This broad applicability enables utility across multiple technical and scientifi
 ![Figure 3: Use Case Examples](assets/figures/Fig3.png)
 
 ---
+<a class="btn" href="https://github.com/MAI-Medicine-of-Artificial-Intelligence/DSA/issues/new?template=case_report.yml">
+  🩺 Report a Case
+</a>
+
+---
 
 <p style="font-size: 0.9em;">
   © 2025 MAI Project. This site and its contents are licensed under a 
