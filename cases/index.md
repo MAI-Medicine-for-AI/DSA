@@ -31,7 +31,7 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
   {% endif %}
 
   <details>
-    <summary style="cursor: pointer; font-weight: bold; margin-top: 1em;">▼ Show full case report</summary>
+    <summary style="cursor: pointer; font-weight: bold; margin-top: 1em;"> Show full case report</summary>
     <div style="margin-top: 1em;">
 
       {% if case.repro %}
