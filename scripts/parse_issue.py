@@ -16,11 +16,16 @@ body = issue["body"]
 lines = body.split("\n")
 
 def extract(field):
+    field_line = f"### {field}".lower().strip()
     for i, line in enumerate(lines):
-        if line.strip() == f"### {field}":
-            if i + 1 < len(lines):
-                return lines[i + 1].strip()
+        if line.strip().lower().startswith(field_line):
+            # その次の行が本文（空行の可能性もあるためスキップして探す）
+            for j in range(i + 1, len(lines)):
+                content = lines[j].strip()
+                if content:  # 空じゃなければ返す
+                    return content
     return ""
+
 
 title = issue["title"]
 disorder = extract("Disorder code (DSA-1)")
