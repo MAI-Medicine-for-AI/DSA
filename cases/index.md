@@ -39,8 +39,9 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
 
 ---
 {% for case in sorted_cases %}
-  {% assign disorder_code = case.disorder | strip | slice: 0, 3 %}
+  {% assign disorder_code = case.disorder | strip | split: " " | first %}
   {% assign chapter_letter = disorder_code | slice: 0, 1 | upcase %}
+
 
 <article 
   class="case-entry"
