@@ -4,7 +4,8 @@ title: Community Case Reports
 nav_order: 8
 ---
 
-{% assign sorted_cases = site.cases | sort: "title" %}
+{% assign sorted_cases = site.cases | sort: "path" | reverse %}
+
 
 # Community-Submitted Case Reports
 
