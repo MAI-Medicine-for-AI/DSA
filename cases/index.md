@@ -12,6 +12,8 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
 <a class="btn" href="https://github.com/MAI-Medicine-of-Artificial-Intelligence/DSA/issues/new?template=case_report.yml">
   🩺 Report a Case
 </a>
+<!-- 👇 これが抜けていた！ -->
+{% assign sorted_cases = site.cases | sort: "title" %}
 <div style="margin-top: 1em; display: flex; gap: 1em; flex-wrap: wrap;">
   <label>
     <strong>Filter by Chapter:</strong>
