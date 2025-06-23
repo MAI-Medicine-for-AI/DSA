@@ -15,7 +15,6 @@ issue = r.json()
 body = issue["body"]
 lines = body.split("\n")
 
-# シンプルなキー抽出（フォームに合わせて調整可）
 def extract(field):
     for line in lines:
         if line.lower().startswith(f"{field.lower()}:"):
@@ -28,13 +27,7 @@ model = extract("Model / Version")
 severity = extract("Severity (1 = mild, 5 = catastrophic)")
 repro = extract("Failure description & reproduction steps")
 evidence = extract("Evidence (e.g., URLs, logs)")
-filename = f"_cases/case-{issue_number}.md"
-with open(filename, "w") as f:
-    f.write(f"""---
-title: "{title}"
-disorder: "{disorder}"
-model: "{model}"
-severity: "{severity}"
+
 print("==== DEBUG ====")
 print("Title:", title)
 print("Disorder:", disorder)
@@ -42,6 +35,14 @@ print("Model:", model)
 print("Severity:", severity)
 print("Repro:", repro)
 print("Evidence:", evidence)
+
+filename = f"_cases/case-{issue_number}.md"
+with open(filename, "w") as f:
+    f.write(f"""---
+title: "{title}"
+disorder: "{disorder}"
+model: "{model}"
+severity: "{severity}"
 ---
 
 ## Reproduction Steps
