@@ -4,6 +4,8 @@ title: Community Case Reports
 nav_order: 8
 ---
 
+{% assign sorted_cases = site.cases | sort: "title" %}
+
 # Community-Submitted Case Reports
 
 Each case is formatted using the DSA-1 clinical taxonomy, and includes structured fields such as symptoms, severity, mechanisms, and interventions.
