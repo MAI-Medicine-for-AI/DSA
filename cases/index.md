@@ -13,13 +13,13 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
   🩺 Report a Case
 </a>
 <!-- 👇 これが抜けていた！ -->
-{% assign chapters = "A,B,C,D,E,F,G,H,I" | split: "," %}
+{% assign chapter_letters = "A,B,C,D,E,F,G,H,I" | split: "," %}
 <div style="margin-top: 1em; display: flex; gap: 1em; flex-wrap: wrap;">
   <label>
     <strong>Filter by Chapter:</strong>
     <select id="filter-chapter">
       <option value="">All</option>
-      {% for letter in chapters %}
+      {% for letter in chapter_letters %}
         <option value="{{ letter }}">Chapter {{ letter }}</option>
       {% endfor %}
     </select>
@@ -36,6 +36,7 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
     </select>
   </label>
 </div>
+
 
 
 ---
