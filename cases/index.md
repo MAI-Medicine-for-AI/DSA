@@ -12,13 +12,38 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
 <a class="btn" href="https://github.com/MAI-Medicine-of-Artificial-Intelligence/DSA/issues/new?template=case_report.yml">
   🩺 Report a Case
 </a>
+<div style="margin-top: 1em; display: flex; gap: 1em; flex-wrap: wrap;">
+  <label>
+    <strong>Filter by Chapter:</strong>
+    <select id="filter-chapter">
+      <option value="">All</option>
+      {% for letter in "A,B,C,D,E,F,G,H,I" | split: "," %}
+        <option value="{{ letter }}">Chapter {{ letter }}</option>
+      {% endfor %}
+    </select>
+  </label>
+
+  <label>
+    <strong>Filter by Severity:</strong>
+    <select id="filter-severity">
+      <option value="">All</option>
+      <option value="4">4 – Severe</option>
+      <option value="3">3 – Moderate</option>
+      <option value="2">2 – Mild</option>
+      <option value="1">1 – No harm</option>
+    </select>
+  </label>
+</div>
 
 ---
 
 {% assign sorted_cases = site.cases | sort: "title" %}
 {% for case in sorted_cases %}
-<article style="margin-bottom: 3em; padding: 1.5em; border-left: 4px solid #ccc; background: #f9f9f9;">
-  <h2 style="margin-bottom: 0.5em;">{{ case.title }}</h2>
+<article 
+  class="case-entry"
+  style="margin-bottom: 3em; padding: 1.5em; border-left: 4px solid #ccc; background: #f9f9f9;"
+  data-chapter="{{ case.disorder | slice: 0, 1 | upcase }}"
+  data-severity="{{ case.severity | slice: 0, 1 }}">
 
   {% if case.disorder %}
     <p><strong>Disorder code (DSA-1):</strong> {{ case.disorder }}</p>
@@ -69,3 +94,27 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
   </details>
 </article>
 {% endfor %}
+
+<script>
+  const chapterFilter = document.getElementById("filter-chapter");
+  const severityFilter = document.getElementById("filter-severity");
+  const entries = document.querySelectorAll(".case-entry");
+
+  function applyFilters() {
+    const selectedChapter = chapterFilter.value;
+    const selectedSeverity = severityFilter.value;
+
+    entries.forEach(entry => {
+      const entryChapter = entry.dataset.chapter;
+      const entrySeverity = entry.dataset.severity;
+
+      const matchChapter = !selectedChapter || entryChapter === selectedChapter;
+      const matchSeverity = !selectedSeverity || entrySeverity === selectedSeverity;
+
+      entry.style.display = (matchChapter && matchSeverity) ? "block" : "none";
+    });
+  }
+
+  chapterFilter.addEventListener("change", applyFilters);
+  severityFilter.addEventListener("change", applyFilters);
+</script>
