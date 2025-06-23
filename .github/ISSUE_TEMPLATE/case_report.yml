@@ -116,7 +116,7 @@ body:
     id: evidence
     attributes:
       label: Evidence (e.g., URLs, logs)
-   - type: textarea
+  - type: textarea
     id: mechanism
     attributes:
       label: Presumed underlying mechanism
