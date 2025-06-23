@@ -6,7 +6,7 @@ on:
 
 jobs:
   harvest:
-    if: contains(github.event.issue.labels.*.name, 'case report')
+    
     runs-on: ubuntu-latest
     permissions:
       contents: write
