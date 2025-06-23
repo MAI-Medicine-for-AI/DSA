@@ -16,9 +16,10 @@ body = issue["body"]
 lines = body.split("\n")
 
 def extract(field):
-    for line in lines:
-        if line.lower().startswith(f"{field.lower()}:"):
-            return line.split(":", 1)[1].strip()
+    for i, line in enumerate(lines):
+        if line.strip() == f"### {field}":
+            if i + 1 < len(lines):
+                return lines[i + 1].strip()
     return ""
 
 title = issue["title"]
@@ -53,3 +54,5 @@ severity: "{severity}"
 
 {evidence}
 """)
+
+
