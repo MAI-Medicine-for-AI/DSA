@@ -10,7 +10,6 @@ nav_order: 8
 
 Each case is formatted using the DSA-1 clinical taxonomy, and includes structured fields such as symptoms, severity, mechanisms, and interventions.
 
----
 <a class="btn" href="https://github.com/MAI-Medicine-of-Artificial-Intelligence/DSA/issues/new?template=case_report.yml">
   🩺 Report a Case
 </a>
