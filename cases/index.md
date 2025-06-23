@@ -41,15 +41,19 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
 
 
 ---
+{% assign case_index = 0 %}
 {% for case in sorted_cases %}
   {% assign disorder_code = case.disorder | strip | split: " " | first %}
   {% assign chapter_letter = disorder_code | slice: 0, 1 | upcase %}
 
+
 <article 
   class="case-entry"
   style="margin-bottom: 3em; padding: 1.5em; border-left: 4px solid #ccc; background: #f9f9f9;"
+  data-index="{{ case_index }}"
   data-chapter="{{ chapter_letter }}"
   data-severity="{{ case.severity | slice: 0, 1 }}">
+
 
   <p><strong>Debug:</strong> disorder="{{ case.disorder }}", chapter="{{ chapter_letter }}"</p>
 
@@ -100,34 +104,79 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
 
     </div>
   </details>
-</article>
+
+{% assign case_index = case_index | plus: 1 %}
 {% endfor %}
+
+<!-- ここに移動！ -->
+<div id="pagination-controls" style="text-align: center; margin-top: 2em;">
+  <button id="prev-page" disabled>← Prev</button>
+  <span id="page-info" style="margin: 0 1em;">Page 1</span>
+  <button id="next-page">Next →</button>
+</div>
 
 <script>
   const chapterFilter = document.getElementById("filter-chapter");
   const severityFilter = document.getElementById("filter-severity");
-  const entries = document.querySelectorAll(".case-entry");
+  const entries = [...document.querySelectorAll(".case-entry")];
+  const pageInfo = document.getElementById("page-info");
+  const prevBtn = document.getElementById("prev-page");
+  const nextBtn = document.getElementById("next-page");
+
+  const ITEMS_PER_PAGE = 10;
+  let currentPage = 1;
+  let filteredEntries = [];
 
   function applyFilters() {
     const selectedChapter = chapterFilter.value.trim();
     const selectedSeverity = severityFilter.value.trim();
 
-    entries.forEach(entry => {
+    filteredEntries = entries.filter(entry => {
       const entryChapter = (entry.dataset.chapter || "").trim();
       const entrySeverity = (entry.dataset.severity || "").trim();
-
-      console.log("Match?", entryChapter, entrySeverity);
 
       const matchChapter = !selectedChapter || entryChapter === selectedChapter;
       const matchSeverity = !selectedSeverity || entrySeverity === selectedSeverity;
 
-      entry.style.display = (matchChapter && matchSeverity) ? "block" : "none";
+      return matchChapter && matchSeverity;
     });
+
+    currentPage = 1;
+    renderPage();
   }
 
+  function renderPage() {
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    const endIndex = currentPage * ITEMS_PER_PAGE;
+
+    entries.forEach(entry => entry.style.display = "none");
+    filteredEntries.slice(startIndex, endIndex).forEach(entry => {
+      entry.style.display = "block";
+    });
+
+    pageInfo.textContent = `Page ${currentPage} of ${Math.ceil(filteredEntries.length / ITEMS_PER_PAGE)}`;
+    prevBtn.disabled = currentPage === 1;
+    nextBtn.disabled = endIndex >= filteredEntries.length;
+  }
 
   chapterFilter.addEventListener("change", applyFilters);
   severityFilter.addEventListener("change", applyFilters);
-  document.addEventListener("DOMContentLoaded", applyFilters); // ← 最初から反映
+  prevBtn.addEventListener("click", () => {
+    if (currentPage > 1) {
+      currentPage--;
+      renderPage();
+    }
+  });
+  nextBtn.addEventListener("click", () => {
+    if (currentPage * ITEMS_PER_PAGE < filteredEntries.length) {
+      currentPage++;
+      renderPage();
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", applyFilters); // ← 初期レンダリング
 </script>
 
+
+
+  
