@@ -1,0 +1,48 @@
+import sys
+import os
+import requests
+
+issue_number = sys.argv[1]
+repo = os.environ['GITHUB_REPOSITORY']
+token = os.environ['GH_TOKEN']
+
+url = f'https://api.github.com/repos/{repo}/issues/{issue_number}'
+headers = {'Authorization': f'token {token}'}
+
+r = requests.get(url, headers=headers)
+issue = r.json()
+
+body = issue["body"]
+lines = body.split("\n")
+
+# シンプルなキー抽出（フォームに合わせて調整可）
+def extract(field):
+    for line in lines:
+        if line.lower().startswith(f"{field.lower()}:"):
+            return line.split(":", 1)[1].strip()
+    return ""
+
+title = issue["title"]
+disorder = extract("Disorder code")
+model = extract("Model / Version")
+severity = extract("Severity")
+repro = extract("Failure description")
+evidence = extract("Evidence")
+
+filename = f"_cases/case-{issue_number}.md"
+with open(filename, "w") as f:
+    f.write(f"""---
+title: "{title}"
+disorder: "{disorder}"
+model: "{model}"
+severity: "{severity}"
+---
+
+## Reproduction Steps
+
+{repro}
+
+## Evidence
+
+{evidence}
+""")
