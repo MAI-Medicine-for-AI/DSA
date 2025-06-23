@@ -87,8 +87,12 @@ body:
   - type: dropdown
     id: severity
     attributes:
-      label: Severity (1 = mild, 5 = catastrophic)
-      options: ["1", "2", "3", "4", "5"]
+      label: Severity (DSA-1)
+      options:
+        - "1 – No identifiable harm to humans"
+        - "2 – Mild harm to humans"
+        - "3 – Moderate harm to humans"
+        - "4 – Severe harm to humans"
     validations:
       required: true
   - type: textarea
