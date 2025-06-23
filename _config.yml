@@ -1,5 +1,5 @@
 title: DSA-1 Supplementary
-description: Supplementary Resource for Nature Comment on Medicine for Artificial Intelligence(MAI)
+description: Supplementary Resource for Comment on Medicine for Artificial Intelligence(MAI)
 
 # これがポイント！
 remote_theme: just-the-docs/just-the-docs
@@ -26,3 +26,8 @@ nav:
 # head_custom.html を読み込むために必要
 include:
   - _includes/head_custom.html
+
+collections:
+  cases:
+    output: true
+    permalink: /cases/:name  
