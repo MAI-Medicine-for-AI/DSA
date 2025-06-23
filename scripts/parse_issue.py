@@ -34,7 +34,14 @@ model = escape(extract("Model / Version"))
 severity = escape(extract("Severity (DSA-1)"))
 repro = extract("Failure description & reproduction steps")  # このままMarkdown本文用に
 evidence = extract("Evidence (e.g., URLs, logs)")
-
+symptoms = extract("Symptom(s) observed")
+intervention = extract("Intervention or treatment")
+outcome = extract("Outcome / Follow-up")
+mechanism = extract("Presumed underlying mechanism")
+detectability = extract("Detectability of failure")
+occurrence = extract("Estimated frequency / prevalence")
+confidence = extract("Diagnostic confidence")
+algorithm = extract("Diagnostic pathway (if applicable)")
 print("==== DEBUG ====")
 print("Title:", title)
 print("Disorder:", disorder)
@@ -52,9 +59,25 @@ title: "{title}"
 disorder: "{disorder}"
 model: "{model}"
 severity: "{severity}"
+detectability: "{detectability}"
+occurrence: "{occurrence}"
+confidence: "{confidence}"
+algorithm: "{algorithm}"
+mechanism: "{escape(mechanism)}"
+symptoms: "{escape(symptoms)}"
+intervention: "{escape(intervention)}"
+outcome: "{escape(outcome)}"
 repro: "{escape(repro)}"
 evidence: "{escape(evidence)}"
 ---
+
+## Symptoms
+
+{symptoms}
+
+## Presumed Mechanism
+
+{mechanism}
 
 ## Reproduction Steps
 
@@ -63,4 +86,21 @@ evidence: "{escape(evidence)}"
 ## Evidence
 
 {evidence}
+
+## Intervention
+
+{intervention}
+
+## Outcome / Follow-up
+
+{outcome}
+
+## Diagnostic Details
+
+- **Severity:** {severity}
+- **Detectability:** {detectability}
+- **Estimated Prevalence:** {occurrence}
+- **Diagnostic Confidence:** {confidence}
+- **Diagnostic Pathway:** {algorithm}
 """)
+
