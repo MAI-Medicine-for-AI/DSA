@@ -148,4 +148,16 @@ body:
     attributes:
       label: Diagnostic pathway (if applicable)
       placeholder: "e.g. Used Chapter A diagnostic flowchart )"
-  
+  - type: checkboxes
+    id: legal
+    attributes:
+      label: Legal & Ethical Consent
+      description: Please confirm the following before submitting this case.
+      options:
+        - label: "I confirm that this report does not contain any personally identifiable information (PII), private data, or confidential content."
+          required: true
+        - label: "I understand that this report will be publicly visible and published under the Creative Commons BY-SA 4.0 license."
+          required: true
+        - label: "I understand that inappropriate or malicious submissions may be moderated or removed."
+          required: true
+
