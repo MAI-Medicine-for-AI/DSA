@@ -148,8 +148,4 @@ body:
     attributes:
       label: Diagnostic pathway (if applicable)
       placeholder: "e.g. Used Chapter A diagnostic flowchart )"
-  - type: textarea
-    id: mechanism
-    attributes:
-      label: Presumed underlying mechanism
-      description: What might be the cause of this anomaly? For example, architectural issues, data problems, or misaligned objectives.
+  
