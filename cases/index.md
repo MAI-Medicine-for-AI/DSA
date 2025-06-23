@@ -112,8 +112,10 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
     const selectedSeverity = severityFilter.value.trim();
 
     entries.forEach(entry => {
-      const entryChapter = entry.dataset.chapter?.trim();
-      const entrySeverity = entry.dataset.severity?.trim();
+      const entryChapter = (entry.dataset.chapter || "").trim();
+      const entrySeverity = (entry.dataset.severity || "").trim();
+
+      console.log("Match?", entryChapter, entrySeverity);
 
       const matchChapter = !selectedChapter || entryChapter === selectedChapter;
       const matchSeverity = !selectedSeverity || entrySeverity === selectedSeverity;
@@ -121,6 +123,7 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
       entry.style.display = (matchChapter && matchSeverity) ? "block" : "none";
     });
   }
+
 
   chapterFilter.addEventListener("change", applyFilters);
   severityFilter.addEventListener("change", applyFilters);
