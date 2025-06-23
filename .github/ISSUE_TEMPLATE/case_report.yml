@@ -79,6 +79,13 @@ body:
     validations:
       required: true
   - type: textarea
+    id: symptoms
+    attributes:
+      label: Symptom(s) observed
+      description: Describe the specific abnormal outputs or behaviors that were observed. What did the model do wrong?
+    validations:
+      required: true
+  - type: textarea
     id: repro
     attributes:
       label: Failure description & reproduction steps
@@ -96,6 +103,53 @@ body:
     validations:
       required: true
   - type: textarea
+    id: intervention
+    attributes:
+      label: Intervention or treatment
+      description: Describe any attempted fix, mitigation, or retraining, and the observed effect (if any).
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome / Follow-up
+      description: Did the anomaly recur? Did it improve or worsen after intervention? Any changes over time?
+  - type: textarea
     id: evidence
     attributes:
       label: Evidence (e.g., URLs, logs)
+   - type: textarea
+    id: mechanism
+    attributes:
+      label: Presumed underlying mechanism
+      description: What might be the cause of this anomaly? For example, architectural issues, data problems, or misaligned objectives.
+  - type: dropdown
+    id: detectability
+    attributes:
+      label: Detectability of failure
+      options:
+        - "1 – Rare and hard to reproduce"
+        - "2 – Occasional, under specific conditions"
+        - "3 – Frequent and predictable"
+        - "4 – Deterministic / always reproducible"
+  - type: input
+    id: occurrence
+    attributes:
+      label: Estimated frequency / prevalence
+      placeholder: "e.g. 5% of similar prompts; once every 10 sessions"
+  - type: dropdown
+    id: confidence
+    attributes:
+      label: Diagnostic confidence
+      options:
+        - "1 – Tentative / uncertain"
+        - "2 – Moderate confidence"
+        - "3 – High confidence with supporting evidence"
+  - type: input
+    id: algorithm
+    attributes:
+      label: Diagnostic pathway (if applicable)
+      placeholder: "e.g. Used Chapter A diagnostic flowchart )"
+  - type: textarea
+    id: mechanism
+    attributes:
+      label: Presumed underlying mechanism
+      description: What might be the cause of this anomaly? For example, architectural issues, data problems, or misaligned objectives.
