@@ -1,0 +1,16 @@
+---
+title: "testhallu"
+disorder: "C01 Hallucination Disorder"
+model: "testhallu"
+severity: "4 – Severe harm to humans"
+repro: "testtesttestaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajahfgdjklashgjdahfjdhasjkfhajkhfjkahfjdakhfjkdahfjkahjdfhajkfhjkadhdfjkadhjkfhasjkfhajkfhkjasdhfkjash"
+evidence: "hfajhfdjahfjkdhajkhfdjkahfjkdhajkfhadjkfhjakhfjkahfkjahfjkahfjdafdkashfjkahjfhdjkahfdjkahfjkdahfkjhajfhadk"
+---
+
+## Reproduction Steps
+
+testtesttestaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajahfgdjklashgjdahfjdhasjkfhajkhfjkahfjdakhfjkdahfjkahjdfhajkfhjkadhdfjkadhjkfhasjkfhajkfhkjasdhfkjash
+
+## Evidence
+
+hfajhfdjahfjkdhajkhfdjkahfjkdhajkfhadjkfhjakhfjkahfkjahfjkahfjdafdkashfjkahjfhdjkahfdjkahfjkdahfkjhajfhadk
