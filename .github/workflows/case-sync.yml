@@ -5,8 +5,33 @@ on:
     types: [opened, edited]
 
 jobs:
-  test-log:
+  harvest:
+    if: contains(github.event.issue.labels.*.name, 'case report')
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Log case
-        run: echo "${{ github.event.issue.body }}"
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Parse issue to _cases/ markdown
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          mkdir -p _cases
+          python scripts/parse_issue.py "${{ github.event.issue.number }}"
+
+      - name: Commit case file
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "add case ${{ github.event.issue.number }}"
+          add: '_cases/'
+
