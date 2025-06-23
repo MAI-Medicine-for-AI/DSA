@@ -107,12 +107,12 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
   const entries = document.querySelectorAll(".case-entry");
 
   function applyFilters() {
-    const selectedChapter = chapterFilter.value;
-    const selectedSeverity = severityFilter.value;
+    const selectedChapter = chapterFilter.value.trim();
+    const selectedSeverity = severityFilter.value.trim();
 
     entries.forEach(entry => {
-      const entryChapter = entry.dataset.chapter;
-      const entrySeverity = entry.dataset.severity;
+      const entryChapter = entry.dataset.chapter?.trim();
+      const entrySeverity = entry.dataset.severity?.trim();
 
       const matchChapter = !selectedChapter || entryChapter === selectedChapter;
       const matchSeverity = !selectedSeverity || entrySeverity === selectedSeverity;
@@ -123,4 +123,6 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
 
   chapterFilter.addEventListener("change", applyFilters);
   severityFilter.addEventListener("change", applyFilters);
+  document.addEventListener("DOMContentLoaded", applyFilters); // ← 最初から反映
 </script>
+
