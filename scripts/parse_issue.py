@@ -23,12 +23,11 @@ def extract(field):
     return ""
 
 title = issue["title"]
-disorder = extract("Disorder code")
+disorder = extract("Disorder code (DSA-1)")
 model = extract("Model / Version")
-severity = extract("Severity")
-repro = extract("Failure description")
-evidence = extract("Evidence")
-
+severity = extract("Severity (1 = mild, 5 = catastrophic)")
+repro = extract("Failure description & reproduction steps")
+evidence = extract("Evidence (e.g., URLs, logs)")
 filename = f"_cases/case-{issue_number}.md"
 with open(filename, "w") as f:
     f.write(f"""---
