@@ -1,7 +1,7 @@
 import sys
 import os
 import requests
-
+import json
 def escape(s):
     return s.replace('"', '\\"').replace("\n", " ").strip()
 
@@ -139,7 +139,7 @@ This report was submitted as: **{author_display}**
 ## Disorder Code(s)
 
 {disorder_md}
-import json
+
 
 json_data = {
     "case_id": int(issue_number),
