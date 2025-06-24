@@ -47,6 +47,7 @@ def extract_consent():
 title = escape(issue["title"])
 disorder = escape(extract("Disorder code (DSA-1)"))
 model = escape(extract("Model / Version"))
+evaluation = escape(extract("Evaluation performed"))
 severity = escape(extract("Severity (DSA-1)"))
 repro = extract("Failure description & reproduction steps")  # このままMarkdown本文用に
 evidence = extract("Evidence (e.g., URLs, logs)")
@@ -58,6 +59,7 @@ detectability = extract("Detectability of failure")
 occurrence = extract("Estimated frequency / prevalence")
 confidence = extract("Diagnostic confidence")
 algorithm = extract("Diagnostic pathway (if applicable)")
+author_preference = extract("Author name display preference")
 consent = extract_consent()
 
 print("==== DEBUG ====")
