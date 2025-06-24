@@ -91,6 +91,12 @@ body:
       label: Failure description & reproduction steps
     validations:
       required: true
+  - type: textarea
+    id: evaluation
+    attributes:
+      label: Evaluation performed (optional)
+      description: Describe any evaluation methods used to assess or quantify the anomaly, such as reproducibility tests, accuracy checks, log analysis, or DSA-1 diagnostic flowcharts.
+
   - type: dropdown
     id: severity
     attributes:
@@ -148,16 +154,27 @@ body:
     attributes:
       label: Diagnostic pathway (if applicable)
       placeholder: "e.g. Used Chapter A diagnostic flowchart )"
+  - type: dropdown
+    id: author_preference
+    attributes:
+      label: Author name display preference
+      description: Choose how you would like to be credited as the author of this report.
+      options:
+        - "Anonymous"
+        - "GitHub ID (public)"
+      default: "Anonymous"
+
   - type: checkboxes
     id: legal
     attributes:
-      label: Legal & Ethical Consent
-      description: Please confirm the following before submitting this case.
+      label: Legal & Copyright Agreement
+      description: By submitting this case, you agree to the following:
       options:
-        - label: "I confirm that this report does not contain any personally identifiable information (PII), private data, or confidential content."
+        - label: "I assign the copyright of this report to the maintainers of the MAI project, for the purpose of open scientific sharing."
           required: true
-        - label: "I understand that this report will be publicly visible and published under the Creative Commons BY-SA 4.0 license."
+        - label: "I confirm that this report contains no personal or third-party confidential information."
           required: true
-        - label: "I understand that inappropriate or malicious submissions may be moderated or removed."
+        - label: "I understand this report will be published under the Creative Commons BY-SA 4.0 license and may be used, adapted, and redistributed under those terms."
           required: true
+ 
 
