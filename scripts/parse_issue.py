@@ -47,7 +47,7 @@ def extract_consent():
 title = escape(issue["title"])
 disorder = escape(extract("Disorder code (DSA-1)"))
 model = escape(extract("Model / Version"))
-evaluation = escape(extract("Evaluation performed"))
+evaluation = escape(extract("Evaluation performed (optional)"))
 severity = escape(extract("Severity (DSA-1)"))
 repro = extract("Failure description & reproduction steps")  # このままMarkdown本文用に
 evidence = extract("Evidence (e.g., URLs, logs)")
@@ -79,6 +79,7 @@ title: "{title}"
 disorder: "{disorder}"
 model: "{model}"
 severity: "{severity}"
+evaluation: "{evaluation}"
 detectability: "{detectability}"
 occurrence: "{occurrence}"
 confidence: "{confidence}"
@@ -89,6 +90,7 @@ intervention: "{escape(intervention)}"
 outcome: "{escape(outcome)}"
 repro: "{escape(repro)}"
 evidence: "{escape(evidence)}"
+author_preference: "{escape(author_preference)}"
 consent: "{consent}"
 ---
 
@@ -115,6 +117,14 @@ consent: "{consent}"
 ## Outcome / Follow-up
 
 {outcome}
+
+## Evaluation
+
+{evaluation}
+
+## Author Preference
+
+This report was submitted as: **{author_preference}**
 
 ## Diagnostic Details
 
