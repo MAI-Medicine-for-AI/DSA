@@ -44,6 +44,7 @@ def extract_consent():
             return "not_confirmed"
     return "confirmed"
 
+author_login = issue["user"]["login"]  # ← ここでGitHub IDを取得
 title = escape(issue["title"])
 disorder = escape(extract("Disorder code (DSA-1)"))
 model = escape(extract("Model / Version"))
@@ -62,6 +63,11 @@ algorithm = extract("Diagnostic pathway (if applicable)")
 author_preference = extract("Author name display preference")
 consent = extract_consent()
 
+if author_preference == "GitHub ID (public)":
+    author_display = author_login
+else:
+    author_display = "Anonymous"
+    
 print("==== DEBUG ====")
 print("Title:", title)
 print("Disorder:", disorder)
@@ -90,7 +96,7 @@ intervention: "{escape(intervention)}"
 outcome: "{escape(outcome)}"
 repro: "{escape(repro)}"
 evidence: "{escape(evidence)}"
-author_preference: "{escape(author_preference)}"
+author_display: "{escape(author_display)}"
 consent: "{consent}"
 ---
 
@@ -122,9 +128,9 @@ consent: "{consent}"
 
 {evaluation}
 
-## Author Preference
+## author_display
 
-This report was submitted as: **{author_preference}**
+This report was submitted as: **{author_display}**
 
 ## Diagnostic Details
 
