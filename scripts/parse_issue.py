@@ -27,10 +27,23 @@ def extract(field):
                 if content:
                     return content
     return ""
+def extract_multi(field):
+    field_line = f"### {field}".lower().strip()
+    values = []
+    for i, line in enumerate(lines):
+        if line.strip().lower().startswith(field_line):
+            for j in range(i + 1, len(lines)):
+                content = lines[j].strip()
+                if not content or content.startswith("### "):
+                    break
+                values.append(content)
+            break
+    return values
+
 
 author_login = issue["user"]["login"]  # ← ここでGitHub IDを取得
 title = escape(issue["title"])
-disorder = escape(extract("Disorder code (DSA-1)"))
+disorder_list = extract_multi("Disorder code(s) (DSA-1)")
 model = escape(extract("Model / Version"))
 evaluation = escape(extract("Evaluation performed (optional)"))
 severity = escape(extract("Severity (DSA-1)"))
@@ -45,7 +58,8 @@ occurrence = extract("Estimated frequency / prevalence")
 confidence = extract("Diagnostic confidence")
 algorithm = extract("Diagnostic pathway (if applicable)")
 author_preference = extract("Author name display preference")
-
+disorder_yaml = json.dumps(disorder_list, ensure_ascii=False)  # YAMLに配列で埋め込み
+disorder_md = ", ".join(disorder_list)  # Markdown用にカンマ区切り表示
 if author_preference == "GitHub ID (public)":
     author_display = author_login
 else:
@@ -65,7 +79,7 @@ filename = f"_cases/case-{int(issue_number):03}.md"
 with open(filename, "w") as f:
     f.write(f"""---
 title: "{title}"
-disorder: "{disorder}"
+disorder: {disorder_yaml}
 model: "{model}"
 severity: "{severity}"
 evaluation: "{evaluation}"
@@ -122,13 +136,15 @@ This report was submitted as: **{author_display}**
 - **Diagnostic Confidence:** {confidence}
 - **Diagnostic Pathway:** {algorithm}
 """)
+## Disorder Code(s)
 
+{disorder_md}
 import json
 
 json_data = {
     "case_id": int(issue_number),
     "title": title,
-    "disorder": disorder,
+    "disorder": disorder_list,
     "model": model,
     "severity": severity,
     "evaluation": evaluation,
