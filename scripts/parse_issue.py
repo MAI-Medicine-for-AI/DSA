@@ -67,7 +67,7 @@ else:
     
 print("==== DEBUG ====")
 print("Title:", title)
-print("Disorder:", disorder)
+print("Disorder:", disorder_md)
 print("Model:", model)
 print("Severity:", severity)
 print("Repro:", repro)
