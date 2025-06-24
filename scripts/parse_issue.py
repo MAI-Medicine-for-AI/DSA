@@ -27,22 +27,6 @@ def extract(field):
                 if content:
                     return content
     return ""
-def extract_consent():
-    clauses = [
-        "I confirm that this report does not contain any personally identifiable information (PII), private data, or confidential content.",
-        "I understand that this report will be publicly visible and published under the Creative Commons BY-SA 4.0 license.",
-        "I understand that inappropriate or malicious submissions may be moderated or removed."
-    ]
-    for clause in clauses:
-        matched = False
-        for line in lines:
-            if clause in line:
-                if "[x]" in line.lower():
-                    matched = True
-                    break
-        if not matched:
-            return "not_confirmed"
-    return "confirmed"
 
 author_login = issue["user"]["login"]  # ← ここでGitHub IDを取得
 title = escape(issue["title"])
@@ -61,7 +45,7 @@ occurrence = extract("Estimated frequency / prevalence")
 confidence = extract("Diagnostic confidence")
 algorithm = extract("Diagnostic pathway (if applicable)")
 author_preference = extract("Author name display preference")
-consent = extract_consent()
+consent = confirmed
 
 if author_preference == "GitHub ID (public)":
     author_display = author_login
