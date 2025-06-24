@@ -95,15 +95,39 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
     <p><strong>Symptom(s) observed:</strong><br>{{ case.symptoms | markdownify }}</p>
   {% endif %}
 
-  <details>
+   <details>
     <summary style="cursor: pointer; font-weight: bold; margin-top: 1em;"> Show full case report</summary>
     <div style="margin-top: 1em;">
 
-    <table>
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.95em;">
       <thead>
-        <tr><th>Field</th><th>Description</th></tr>
+        <tr>
+          <th style="text-align: left; width: 30%; padding: 0.5em; background: #f0f0f0;">Field</th>
+          <th style="text-align: left; padding: 0.5em; background: #f0f0f0;">Description</th>
+        </tr>
       </thead>
       <tbody>
+        {% if case.title %}
+        <tr><td>Title</td><td>{{ case.title }}</td></tr>
+        {% endif %}
+        {% if disorder_list %}
+        <tr>
+          <td>Disorder code(s)</td>
+          <td>
+            <ul style="margin: 0; padding-left: 1em;">
+            {% for d in disorder_list %}
+              <li>{{ d | strip | remove: '"' }}</li>
+            {% endfor %}
+            </ul>
+          </td>
+        </tr>
+        {% endif %}
+        {% if case.model %}
+        <tr><td>Model / Version</td><td>{{ case.model }}</td></tr>
+        {% endif %}
+        {% if case.symptoms %}
+        <tr><td>Symptom(s) observed</td><td>{{ case.symptoms | markdownify }}</td></tr>
+        {% endif %}
         {% if case.repro %}
         <tr><td>Failure description</td><td>{{ case.repro | markdownify }}</td></tr>
         {% endif %}
@@ -123,7 +147,7 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
         <tr><td>Evidence</td><td>{{ case.evidence | markdownify }}</td></tr>
         {% endif %}
         {% if case.mechanism %}
-        <tr><td>Presumed underlying mechanism</td><td>{{ case.mechanism | markdownify }}</td></tr>
+        <tr><td>Presumed mechanism</td><td>{{ case.mechanism | markdownify }}</td></tr>
         {% endif %}
         {% if case.detectability %}
         <tr><td>Detectability of failure</td><td>{{ case.detectability }}</td></tr>
@@ -139,9 +163,10 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
         {% endif %}
       </tbody>
     </table>
-
+  
     </div>
   </details>
+
 </article>
 {% assign case_index = case_index | plus: 1 %}
 {% endfor %}
