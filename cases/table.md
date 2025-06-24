@@ -16,7 +16,7 @@ Do you have an interesting or concerning AI anomaly to report?
 You can contribute by submitting a structured case using the DSA-1 format.  
 Click the button below to open a GitHub form where you can describe the observed failure, its context, severity, and any evaluations or interventions performed.
 
-No programming knowledge is required — just fill out the form fields and submit. Your report will be published anonymously.
+No programming knowledge is required — just fill out the form fields and submit. 
 
 > 📌 All case submissions are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) and will be included in this public registry.
 
