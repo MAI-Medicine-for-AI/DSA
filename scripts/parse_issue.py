@@ -30,15 +30,19 @@ def extract(field):
 def extract_multi(field):
     field_line = f"### {field}".lower().strip()
     values = []
-    for i, line in enumerate(lines):
-        if line.strip().lower().startswith(field_line):
-            for j in range(i + 1, len(lines)):
-                content = lines[j].strip()
-                if not content or content.startswith("### "):
-                    break
-                values.append(content)
-            break
+    inside_field = False
+    for line in lines:
+        stripped = line.strip()
+        if stripped.lower().startswith(field_line):
+            inside_field = True
+            continue
+        if inside_field:
+            if stripped.startswith("### "):  # 次のセクションが始まったら終了
+                break
+            if stripped.startswith("- [x] "):  # チェックされたものだけを対象にする
+                values.append(stripped[6:].strip())
     return values
+
 
 
 author_login = issue["user"]["login"]  # ← ここでGitHub IDを取得
