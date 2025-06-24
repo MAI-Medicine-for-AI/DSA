@@ -162,7 +162,7 @@ body:
       options:
         - "Anonymous"
         - "GitHub ID (public)"
-      default: "Anonymous"
+      default: 0  # 👈 これに修正
 
   - type: checkboxes
     id: legal
