@@ -168,7 +168,7 @@ body:
     id: legal
     attributes:
       label: Legal & Copyright Agreement
-      description: By submitting this case, you agree to the following:
+      description: By submitting this case, you agree to the following
       options:
         - label: "I assign the copyright of this report to the maintainers of the MAI project, for the purpose of open scientific sharing."
           required: true
