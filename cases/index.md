@@ -198,5 +198,9 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
 
 <p style="font-size: 0.8em; color: #888;">
 Copyright © 2025 MAI Project. This report was submitted by a contributor who has transferred copyright to the project. Licensed under CC BY-SA 4.0.
+This project is maintained by [Takahiro Kato], with the aim of building an open, medically-inspired framework for understanding and addressing failures in AI systems.
+All case reports are contributed by the community and responsibly managed under a unified copyright structure to ensure long-term accessibility and academic reuse.
+We welcome contributors from all backgrounds, and we commit to handling every submission with transparency, scientific integrity, and respect.
+
 </p>
   
