@@ -22,7 +22,7 @@ nav:
   - Diagnostic Algorithms: diagnostics.md
   - Evaluation Metrics: evaluation.md
   - Glossary: glossary.md
-  - Submitted Cases: cases/index.md
+  - Submitted Cases: cases/table.md
   - License: license.md
 # head_custom.html を読み込むために必要
 include:
