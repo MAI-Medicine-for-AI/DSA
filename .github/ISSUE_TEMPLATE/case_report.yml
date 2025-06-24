@@ -65,7 +65,13 @@ body:
         - label: "Z02 Other (please describe in symptoms)"
     validations:
       required: true
-
+  - type: checkboxes
+    id: disorder_confirm
+    attributes:
+      label: Disorder code confirmation
+      options:
+        - label: "I have selected at least one applicable disorder code above."
+          required: true
   - type: input
     id: model
     attributes:
