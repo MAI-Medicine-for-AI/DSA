@@ -597,6 +597,6 @@ A document that provides evidence-based recommendations for diagnosing and treat
 
 ---
 
-> These terms further enrich the AICD-1 glossary, enabling clinical-level articulation and systematic care planning for AI anomalies.
+> These terms further enrich the DSA-1 glossary, enabling clinical-level articulation and systematic care planning for AI anomalies.
 
 
