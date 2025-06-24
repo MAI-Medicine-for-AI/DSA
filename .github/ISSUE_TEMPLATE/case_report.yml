@@ -153,7 +153,7 @@ body:
     id: algorithm
     attributes:
       label: Diagnostic pathway (if applicable)
-      placeholder: "e.g. Used Chapter A diagnostic flowchart "
+      placeholder: "e.g. Used Chapter A diagnostic flowchart (optional)"
   - type: dropdown
     id: author_preference
     attributes:
