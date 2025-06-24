@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Community Case Reports table
+title: Community-Submitted Case Reports 
 nav_order: 9
 ---
 {% assign sorted_cases = site.cases | sort: "path" | reverse %}
