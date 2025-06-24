@@ -159,7 +159,8 @@ body:
     id: author_preference
     attributes:
       label: Author name display preference
-      description: Choose how you would like to be credited as the author of this report.
+      description: Choose how you would like to be credited as the author of this report.Note: Submissions via this form are made using your GitHub account. If you choose "Anonymous" below, your GitHub ID will not be shown on the website, but it will still be visible on GitHub.
+
       options:
         - "Anonymous"
         - "GitHub ID (public)"
