@@ -67,8 +67,10 @@ Each community-submitted case is the intellectual property of its original autho
       📝 {{ filename }} – {{ disorder_code }}: {{ case.title }}
     </h3>
   {% endif %}
-  {% if case.author %}
-    <p style="margin-top: -0.5em; font-size: 0.9em; color: #666;">Author: {{ case.author_display }}</p>
+  {% if case.author_display %}
+    <p style="margin-top: -0.5em; font-size: 0.9em; color: #666;">
+      Submitted by: {{ case.author_display }}
+    </p>
   {% endif %}
 
   {% if case.disorder %}
