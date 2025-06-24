@@ -45,8 +45,17 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
 ---
 {% assign case_index = 0 %}
 {% for case in sorted_cases %}
-  {% assign disorder_code = case.disorder | strip | split: " " | first %}
+  {% assign disorder_codes = case.disorder %}
+  {% if disorder_codes contains "[" %}
+    {% assign disorder_list = disorder_codes | replace: "[", "" | replace: "]", "" | split: "," %}
+  {% else %}
+    {% assign disorder_list = case.disorder | split: "," %}
+  {% endif %}
+
+  {% assign first_disorder = disorder_list[0] | strip %}
+  {% assign disorder_code = first_disorder | split: " " | first %}
   {% assign chapter_letter = disorder_code | slice: 0, 1 | upcase %}
+
 
 
 <article 
@@ -58,7 +67,7 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
 
 
   {% assign filename = case.path | split: "/" | last | split: "." | first | remove: "-" %}
-  {% assign disorder_code = case.disorder | strip | split: " " | first %}
+ 
 
   {% if case.title %}
     <h3 style="margin-top: 0.5em;">
@@ -71,8 +80,14 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
     </p>
   {% endif %}
 
-  {% if case.disorder %}
-    <p><strong>Disorder code (DSA-1):</strong> {{ case.disorder }}</p>
+  {% if disorder_list %}
+    <p><strong>Disorder code(s) (DSA-1):</strong>
+      <ul>
+      {% for d in disorder_list %}
+        <li>{{ d | strip | remove: '"' }}</li>
+      {% endfor %}
+      </ul>
+    </p>
   {% endif %}
   {% if case.model %}
     <p><strong>Model / Version:</strong> {{ case.model }}</p>
