@@ -10,9 +10,7 @@ nav_order: 8
 # Community-Submitted Case Reports
 
 Each case is formatted using the DSA-1 clinical taxonomy, and includes structured fields such as symptoms, severity, mechanisms, and interventions.
-<p style="font-size: 0.9em; color: #666;">
-Each community-submitted case is the intellectual property of its original author, and is published here under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-SA 4.0</a> license. By submitting a case, contributors agree to license their report under these terms.
-</p>
+
 
 <a class="btn" href="https://github.com/MAI-Medicine-of-Artificial-Intelligence/DSA/issues/new?template=case_report.yml">
   🩺 Report a Case
@@ -198,5 +196,7 @@ Each community-submitted case is the intellectual property of its original autho
 </script>
 
 
-
+<p style="font-size: 0.8em; color: #888;">
+Copyright © MAI Project. This report was submitted by a contributor who has transferred copyright to the project. Licensed under CC BY-SA 4.0.
+</p>
   
