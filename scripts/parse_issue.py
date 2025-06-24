@@ -62,10 +62,11 @@ occurrence = extract("Estimated frequency / prevalence")
 confidence = extract("Diagnostic confidence")
 algorithm = extract("Diagnostic pathway (if applicable)")
 author_preference = extract("Author name display preference")
+disorder_list = extract_multi("Disorder code(s) (DSA-1)")
 disorder_str = ", ".join(disorder_list)
-disorder_yaml = f'"{disorder_str}"'  # ダブルクオート付きで1つの文字列としてYAMLに書き込む
+disorder_yaml = f'"{disorder_str}"'  # YAML用：文字列
+disorder_md = disorder_str           # Markdown用：そのまま
 
-disorder_md = ", ".join(disorder_list)  # Markdown用にカンマ区切り表示
 if author_preference == "GitHub ID (public)":
     author_display = author_login
 else:
