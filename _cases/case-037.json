@@ -1,0 +1,21 @@
+{
+  "case_id": 37,
+  "title": "uooo",
+  "disorder": [
+    "I02 Data-Poisoning Vulnerability Disorder"
+  ],
+  "model": "gaa",
+  "severity": "2 – Mild harm to humans",
+  "evaluation": "_No response_",
+  "detectability": "None",
+  "occurrence": "_No response_",
+  "confidence": "None",
+  "algorithm": "_No response_",
+  "mechanism": "_No response_",
+  "symptoms": "gaaa",
+  "intervention": "_No response_",
+  "outcome": "_No response_",
+  "repro": "gaaa",
+  "evidence": "_No response_",
+  "author_display": "Anonymous"
+}
