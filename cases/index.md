@@ -2,6 +2,7 @@
 layout: default
 title: Community Case Reports
 nav_order: 8
+published: false
 ---
 
 {% assign sorted_cases = site.cases | sort: "path" | reverse %}
