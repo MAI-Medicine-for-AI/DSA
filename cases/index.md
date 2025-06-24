@@ -67,7 +67,9 @@ Each community-submitted case is the intellectual property of its original autho
       📝 {{ filename }} – {{ disorder_code }}: {{ case.title }}
     </h3>
   {% endif %}
-
+  {% if case.author %}
+    <p style="margin-top: -0.5em; font-size: 0.9em; color: #666;">Author: {{ case.author }}</p>
+  {% endif %}
 
   {% if case.disorder %}
     <p><strong>Disorder code (DSA-1):</strong> {{ case.disorder }}</p>
@@ -89,6 +91,10 @@ Each community-submitted case is the intellectual property of its original autho
       {% if case.severity %}
         <p><strong>Severity (DSA-1):</strong> {{ case.severity }}</p>
       {% endif %}
+      {% if case.evaluation %}
+        <p><strong>Evaluation performed:</strong><br>{{ case.evaluation | markdownify }}</p>
+      {% endif %}
+
       {% if case.intervention %}
         <p><strong>Intervention or treatment:</strong><br>{{ case.intervention | markdownify }}</p>
       {% endif %}
