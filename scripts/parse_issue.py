@@ -45,7 +45,6 @@ occurrence = extract("Estimated frequency / prevalence")
 confidence = extract("Diagnostic confidence")
 algorithm = extract("Diagnostic pathway (if applicable)")
 author_preference = extract("Author name display preference")
-consent = confirmed
 
 if author_preference == "GitHub ID (public)":
     author_display = author_login
@@ -81,7 +80,6 @@ outcome: "{escape(outcome)}"
 repro: "{escape(repro)}"
 evidence: "{escape(evidence)}"
 author_display: "{escape(author_display)}"
-consent: "{consent}"
 ---
 
 ## Symptoms
@@ -144,8 +142,8 @@ json_data = {
     "outcome": outcome,
     "repro": repro,
     "evidence": evidence,
-    "author_display": author_display,
-    "consent": consent
+    "author_display": author_display
+    
 }
 
 json_filename = f"_cases/case-{int(issue_number):03}.json"
