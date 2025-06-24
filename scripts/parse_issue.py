@@ -141,3 +141,31 @@ This report was submitted as: **{author_display}**
 - **Diagnostic Pathway:** {algorithm}
 """)
 
+import json
+
+json_data = {
+    "case_id": int(issue_number),
+    "title": title,
+    "disorder": disorder,
+    "model": model,
+    "severity": severity,
+    "evaluation": evaluation,
+    "detectability": detectability,
+    "occurrence": occurrence,
+    "confidence": confidence,
+    "algorithm": algorithm,
+    "mechanism": mechanism,
+    "symptoms": symptoms,
+    "intervention": intervention,
+    "outcome": outcome,
+    "repro": repro,
+    "evidence": evidence,
+    "author_display": author_display,
+    "consent": consent
+}
+
+json_filename = f"_cases/case-{int(issue_number):03}.json"
+with open(json_filename, "w") as jf:
+    json.dump(json_data, jf, indent=2, ensure_ascii=False)
+
+
