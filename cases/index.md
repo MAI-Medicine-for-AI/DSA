@@ -197,6 +197,6 @@ Each case is formatted using the DSA-1 clinical taxonomy, and includes structure
 
 
 <p style="font-size: 0.8em; color: #888;">
-Copyright © MAI Project. This report was submitted by a contributor who has transferred copyright to the project. Licensed under CC BY-SA 4.0.
+Copyright © 2025 MAI Project. This report was submitted by a contributor who has transferred copyright to the project. Licensed under CC BY-SA 4.0.
 </p>
   
