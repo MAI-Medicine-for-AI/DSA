@@ -71,7 +71,14 @@ if author_preference == "GitHub ID (public)":
     author_display = author_login
 else:
     author_display = "Anonymous"
-    
+
+# --- ここに追記 ---
+OFFSET = 39
+case_number = int(issue_number) - OFFSET
+if case_number <= 0:
+    raise ValueError(f"Invalid issue number {issue_number}. After subtracting OFFSET={OFFSET}, result is ≤ 0.")
+# ------------------
+
 print("==== DEBUG ====")
 print("Title:", title)
 print("Disorder:", disorder_md)
@@ -82,7 +89,7 @@ print("Evidence:", evidence)
 print("==== FULL BODY ====")
 print(body)
 
-filename = f"_cases/case-{int(issue_number):03}.md"
+filename = f"_cases/case-{int(case_number):03}.md"
 with open(filename, "w") as f:
     f.write(f"""---
 title: "{title}"
@@ -169,7 +176,7 @@ json_data = {
     
 }
 
-json_filename = f"_cases/case-{int(issue_number):03}.json"
+json_filename = f"_cases/case-{int(case_number):03}.json"
 with open(json_filename, "w") as jf:
     json.dump(json_data, jf, indent=2, ensure_ascii=False)
 
