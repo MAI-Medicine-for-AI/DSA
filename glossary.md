@@ -29,7 +29,7 @@ An objectively classifiable anomaly or abnormal behavior in AI.
 
 ### Illness
 
-Synonymous with disease; used interchangeably in the AICD-1 framework.
+Synonymous with disease; used interchangeably in the DSA-1 framework.
 
 ---
 
@@ -585,7 +585,7 @@ The most widely accepted and recommended form of treatment for a given AI diseas
 
 ---
 
-### Evidence-Based Artificial Intelligence Medicine (EBAIM)
+### Evidence-Based Medicine for Artificiall Intelligence (EBMAI)
 
 The practice of diagnosing and treating AI diseases based on empirical and systematically collected evidence.
 
