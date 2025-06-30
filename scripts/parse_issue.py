@@ -73,6 +73,7 @@ else:
     author_display = "Anonymous"
 
 # --- ここに追記 ---
+# OFFSET: 現在のIssue番号（～39）を差し引いて case-001 から再カウント
 OFFSET = 39
 case_number = int(issue_number) - OFFSET
 if case_number <= 0:
@@ -156,7 +157,7 @@ This report was submitted as: **{author_display}**
 
 
 json_data = {
-    "case_id": int(issue_number),
+    "case_id": int(case_number),
     "title": title,
     "disorder": disorder_list,
     "model": model,
