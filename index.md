@@ -57,7 +57,7 @@ This broad applicability enables utility across multiple technical and scientifi
 
 As neurological disorders in humans have been understood through neural properties, connectivity, and computational neuroscience, AI anomalies may similarly be analyzed via neuron functions, layer structure, information flow, and learning dynamics to clarify pathological mechanisms and identify targets for improvement or repair.
 
-![Figure 3: Use Case Examples](assets/figures/Fig3.png)
+![Figure 3: Use Case Examples](assets/figures/Fig8.png)
 
 
 ---
