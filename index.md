@@ -53,6 +53,15 @@ This broad applicability enables utility across multiple technical and scientifi
 
 ---
 
+## Bridging Computational Neuroscience and AI Pathology
+
+As neurological disorders in humans have been understood through neural properties, connectivity, and computational neuroscience, AI anomalies may similarly be analyzed via neuron functions, layer structure, information flow, and learning dynamics to clarify pathological mechanisms and identify targets for improvement or repair.
+
+![Figure 3: Use Case Examples](assets/figures/Fig3.png)
+
+
+---
+
 <p style="font-size: 0.9em;">
   © 2025 MAI Project. This site and its contents are licensed under a 
   <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
