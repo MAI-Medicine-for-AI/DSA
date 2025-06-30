@@ -18,3 +18,10 @@ This classification system (**DSA-1**) was originally developed by **Takahiro Ka
 as part of the **MAI (Medicine for Artificial Intelligence)** framework.  
 You are free to share and adapt the materials for any purpose, even commercially,  
 **provided that** proper attribution is given and all derivative works are distributed under the same license.
+
+## Contact
+
+For questions or collaboration requests, please email:&nbsp;
+<a href="mailto:&#x74;&#x61;&#x6b;&#x61;&#x68;&#x69;&#x72;&#x6f;&#x6b;&#x61;&#x74;&#x6f;&#x2e;&#x6d;&#x64;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">
+&#x74;&#x61;&#x6b;&#x61;&#x68;&#x69;&#x72;&#x6f;&#x6b;&#x61;&#x74;&#x6f;&#x2e;&#x6d;&#x64;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;
+</a>
