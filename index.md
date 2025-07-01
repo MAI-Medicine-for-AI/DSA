@@ -67,6 +67,6 @@ As neurological disorders in humans have been understood through neural properti
   <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
     Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
   </a>.<br>
-  Author: Takahiro Kato
+  
 </p>
 
