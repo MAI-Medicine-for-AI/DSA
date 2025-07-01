@@ -8,5 +8,5 @@ You are free to share and adapt the materials for any purpose, even commercially
 - Proper attribution is given to the original author, and
 - Any modified material is distributed under the same license (ShareAlike).
 
-Author: **Takahiro Kato** 
+Author: **** 
 Year: 2025
