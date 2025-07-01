@@ -13,7 +13,8 @@ symptoms: "The model provided an incorrect LDL-C calculation using the Friedewal
 intervention: "_No response_"
 outcome: "_No response_"
 repro: "When prompted to generate a board exam-style question involving the Friedewald equation, the model was given input values (TC = 220 mg/dL, HDL-C = 50 mg/dL, TG = 150 mg/dL) and asked to compute the LDL-C. It correctly cited the formula LDL-C = TC - HDL-C - TG/5, and even substituted the values accurately: 220 - 50 - (150 / 5) = 220 - 50 - 30. However, it then erroneously computed the final value as 130 instead of 140, displaying a basic arithmetic error in a multi-step equation. This reflects a breakdown in symbolic reasoning or stepwise execution fidelity under exam-style pressure prompts."
-evidence: "ユーザー：friedewald式で医師国家試験に出そうなところをまとめて。例題も解説付きで"
+evidence: "Prompts were written in Japanese.
+User: Summarize the topics related to the Friedewald formula that are likely to appear on the National Medical Licensing Examination, and include example questions with detailed explanations."
 author_display: "MAI-Medicine-for-AI"
 ---
 
